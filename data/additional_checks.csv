@@ -1,0 +1,10 @@
+evaluation,planned_runs,completed_requests,usable_outcomes,status,concise_reason
+Statistical calibration simulation,,,,UNSUCCESSFUL,CPU simulation did not reproduce the registered repository bootstrap and multiplicity procedure; it is not evidence for the paper statistics.
+Held-out repository comparison (E21),576,576,,INVALID_FOR_PARALLEL_COMPARISON,All 107 recorded read-action validation errors were in PARALLEL; serial results remain descriptive.
+Corrected held-out follow-up (E21R),384,128,0,NO_USABLE_TRANSFER_ESTIMATE,256/384 rows were committed: 128 successful responses and 128 HTTP errors; 128 keys were missing after qualification and serving failures.
+Alternative output formats (E11),288,96,51,INCONCLUSIVE,"96 raw-JSON requests produced 51 scorer-success outcomes; 96 constrained-structured and 96 native-tool requests failed transport, so no comparable effect estimate is available."
+AgentBench,,15,0,MODEL_CHECK_NOT_PASSED,The selected checkpoint did not meet the required task-success and recovery checks.
+API-Bank,,30,0,MODEL_CHECK_NOT_PASSED,Executable-call competence was below the threshold specified for the comparison.
+AgentDojo / SurfaceBench,106,106,0,NO_VALID_EFFECT_ESTIMATE,Response handling failed because emitted tool calls used a representation the evaluation code did not consume.
+τ-bench,24,24,0,NO_VALID_EFFECT_ESTIMATE,The inference server lacked the native tool-call execution path required by the official benchmark setup.
+Parser and scoring diagnostics,,,,LIMITED_CHECK,The appendix reports 42 parsing/scoring cases and 11 deliberately altered inputs; these do not replace full reference-runtime validation.

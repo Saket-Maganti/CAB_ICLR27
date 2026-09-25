@@ -1,0 +1,462 @@
+experiment,panel,model,interface,condition,prompt_class,arm,n,correct,accuracy,valid_finals,parser_rejections,action_rejections,tool_calls
+authentic_repository_evaluation,,Qwen3,NATIVE_TOOL_CALL,CLEAN,,CLEAN,32,27,0.84375,0,0,0,80
+authentic_repository_evaluation,,Qwen3,NATIVE_TOOL_CALL,DISRUPT,,DISRUPT,32,14,0.4375,0,0,0,81
+authentic_repository_evaluation,,Qwen3,NATIVE_TOOL_CALL,PRESERVE,,PRESERVE,32,26,0.8125,0,0,0,78
+closed_book_no_tools,,Gemma3,,,,CLOSED_BOOK,48,2,0.041666666666666664,48,0,0,0
+closed_book_no_tools,,InternLM2.5,,,,CLOSED_BOOK,48,0,0.0,48,0,0,0
+closed_book_no_tools,,Qwen3,,,,CLOSED_BOOK,48,1,0.020833333333333332,48,0,0,0
+closed_book_no_tools,,Yi-1.5,,,,CLOSED_BOOK,48,0,0.0,48,0,0,0
+file_format_boundary,,Gemma3,PARALLEL,CLEAN,DEPLOYMENT_YAML,BASE,4,4,1.0,4,0,0,6
+file_format_boundary,,Gemma3,PARALLEL,CLEAN,DEPLOYMENT_YAML,PLACEBO,4,4,1.0,4,0,0,6
+file_format_boundary,,Gemma3,PARALLEL,CLEAN,DOCKERFILE,BASE,4,4,1.0,4,0,0,9
+file_format_boundary,,Gemma3,PARALLEL,CLEAN,DOCKERFILE,PLACEBO,4,4,1.0,4,0,0,10
+file_format_boundary,,Gemma3,PARALLEL,CLEAN,GITHUB_ACTIONS,BASE,4,4,1.0,4,0,0,9
+file_format_boundary,,Gemma3,PARALLEL,CLEAN,GITHUB_ACTIONS,PLACEBO,4,4,1.0,4,0,0,10
+file_format_boundary,,Gemma3,PARALLEL,CLEAN,LOCKFILE,BASE,4,4,1.0,4,0,0,7
+file_format_boundary,,Gemma3,PARALLEL,CLEAN,LOCKFILE,PLACEBO,4,4,1.0,4,0,0,13
+file_format_boundary,,Gemma3,PARALLEL,CLEAN,PRECOMMIT_YAML,BASE,4,4,1.0,4,0,0,8
+file_format_boundary,,Gemma3,PARALLEL,CLEAN,PRECOMMIT_YAML,PLACEBO,4,3,0.75,4,0,0,9
+file_format_boundary,,Gemma3,PARALLEL,CLEAN,TOX_INI,BASE,4,4,1.0,4,0,0,5
+file_format_boundary,,Gemma3,PARALLEL,CLEAN,TOX_INI,PLACEBO,4,4,1.0,4,0,0,6
+file_format_boundary,,Gemma3,PARALLEL,DISRUPT,DEPLOYMENT_YAML,BASE,4,2,0.5,4,0,0,10
+file_format_boundary,,Gemma3,PARALLEL,DISRUPT,DEPLOYMENT_YAML,PLACEBO,4,2,0.5,4,0,0,8
+file_format_boundary,,Gemma3,PARALLEL,DISRUPT,DOCKERFILE,BASE,4,3,0.75,4,0,0,13
+file_format_boundary,,Gemma3,PARALLEL,DISRUPT,DOCKERFILE,PLACEBO,4,4,1.0,4,0,0,12
+file_format_boundary,,Gemma3,PARALLEL,DISRUPT,GITHUB_ACTIONS,BASE,4,3,0.75,4,0,0,10
+file_format_boundary,,Gemma3,PARALLEL,DISRUPT,GITHUB_ACTIONS,PLACEBO,4,3,0.75,4,0,0,10
+file_format_boundary,,Gemma3,PARALLEL,DISRUPT,LOCKFILE,BASE,4,3,0.75,4,0,0,7
+file_format_boundary,,Gemma3,PARALLEL,DISRUPT,LOCKFILE,PLACEBO,4,3,0.75,4,0,0,14
+file_format_boundary,,Gemma3,PARALLEL,DISRUPT,PRECOMMIT_YAML,BASE,4,4,1.0,4,0,0,11
+file_format_boundary,,Gemma3,PARALLEL,DISRUPT,PRECOMMIT_YAML,PLACEBO,4,2,0.5,4,0,0,13
+file_format_boundary,,Gemma3,PARALLEL,DISRUPT,TOX_INI,BASE,4,2,0.5,4,0,0,6
+file_format_boundary,,Gemma3,PARALLEL,DISRUPT,TOX_INI,PLACEBO,4,0,0.0,4,0,0,6
+file_format_boundary,,Gemma3,SERIAL,CLEAN,DEPLOYMENT_YAML,BASE,4,4,1.0,4,0,0,6
+file_format_boundary,,Gemma3,SERIAL,CLEAN,DEPLOYMENT_YAML,PLACEBO,4,4,1.0,4,0,0,6
+file_format_boundary,,Gemma3,SERIAL,CLEAN,DOCKERFILE,BASE,4,4,1.0,4,0,0,10
+file_format_boundary,,Gemma3,SERIAL,CLEAN,DOCKERFILE,PLACEBO,4,4,1.0,4,0,0,9
+file_format_boundary,,Gemma3,SERIAL,CLEAN,GITHUB_ACTIONS,BASE,4,4,1.0,4,0,0,9
+file_format_boundary,,Gemma3,SERIAL,CLEAN,GITHUB_ACTIONS,PLACEBO,4,4,1.0,4,0,0,10
+file_format_boundary,,Gemma3,SERIAL,CLEAN,LOCKFILE,BASE,4,4,1.0,4,0,0,8
+file_format_boundary,,Gemma3,SERIAL,CLEAN,LOCKFILE,PLACEBO,4,4,1.0,4,0,0,8
+file_format_boundary,,Gemma3,SERIAL,CLEAN,PRECOMMIT_YAML,BASE,4,4,1.0,4,0,0,8
+file_format_boundary,,Gemma3,SERIAL,CLEAN,PRECOMMIT_YAML,PLACEBO,4,4,1.0,4,0,0,9
+file_format_boundary,,Gemma3,SERIAL,CLEAN,TOX_INI,BASE,4,4,1.0,4,0,0,5
+file_format_boundary,,Gemma3,SERIAL,CLEAN,TOX_INI,PLACEBO,4,4,1.0,4,0,0,5
+file_format_boundary,,Gemma3,SERIAL,DISRUPT,DEPLOYMENT_YAML,BASE,4,2,0.5,4,0,0,10
+file_format_boundary,,Gemma3,SERIAL,DISRUPT,DEPLOYMENT_YAML,PLACEBO,4,2,0.5,4,0,0,10
+file_format_boundary,,Gemma3,SERIAL,DISRUPT,DOCKERFILE,BASE,4,4,1.0,4,0,0,13
+file_format_boundary,,Gemma3,SERIAL,DISRUPT,DOCKERFILE,PLACEBO,4,4,1.0,4,0,0,10
+file_format_boundary,,Gemma3,SERIAL,DISRUPT,GITHUB_ACTIONS,BASE,4,3,0.75,4,0,0,10
+file_format_boundary,,Gemma3,SERIAL,DISRUPT,GITHUB_ACTIONS,PLACEBO,4,3,0.75,4,0,0,11
+file_format_boundary,,Gemma3,SERIAL,DISRUPT,LOCKFILE,BASE,4,3,0.75,4,0,0,8
+file_format_boundary,,Gemma3,SERIAL,DISRUPT,LOCKFILE,PLACEBO,4,3,0.75,4,0,0,7
+file_format_boundary,,Gemma3,SERIAL,DISRUPT,PRECOMMIT_YAML,BASE,4,4,1.0,4,0,0,11
+file_format_boundary,,Gemma3,SERIAL,DISRUPT,PRECOMMIT_YAML,PLACEBO,4,4,1.0,4,0,0,11
+file_format_boundary,,Gemma3,SERIAL,DISRUPT,TOX_INI,BASE,4,2,0.5,4,0,0,6
+file_format_boundary,,Gemma3,SERIAL,DISRUPT,TOX_INI,PLACEBO,4,2,0.5,4,0,0,6
+file_format_boundary,,InternLM2.5,PARALLEL,CLEAN,DEPLOYMENT_YAML,BASE,4,4,1.0,4,0,0,18
+file_format_boundary,,InternLM2.5,PARALLEL,CLEAN,DEPLOYMENT_YAML,PLACEBO,4,4,1.0,4,0,0,18
+file_format_boundary,,InternLM2.5,PARALLEL,CLEAN,DOCKERFILE,BASE,4,4,1.0,4,0,0,11
+file_format_boundary,,InternLM2.5,PARALLEL,CLEAN,DOCKERFILE,PLACEBO,4,4,1.0,4,0,0,14
+file_format_boundary,,InternLM2.5,PARALLEL,CLEAN,GITHUB_ACTIONS,BASE,4,4,1.0,4,0,0,17
+file_format_boundary,,InternLM2.5,PARALLEL,CLEAN,GITHUB_ACTIONS,PLACEBO,4,4,1.0,4,0,0,15
+file_format_boundary,,InternLM2.5,PARALLEL,CLEAN,LOCKFILE,BASE,4,4,1.0,4,0,0,15
+file_format_boundary,,InternLM2.5,PARALLEL,CLEAN,LOCKFILE,PLACEBO,4,4,1.0,4,0,0,13
+file_format_boundary,,InternLM2.5,PARALLEL,CLEAN,PRECOMMIT_YAML,BASE,4,4,1.0,4,0,0,12
+file_format_boundary,,InternLM2.5,PARALLEL,CLEAN,PRECOMMIT_YAML,PLACEBO,4,4,1.0,4,0,0,12
+file_format_boundary,,InternLM2.5,PARALLEL,CLEAN,TOX_INI,BASE,4,4,1.0,4,0,0,11
+file_format_boundary,,InternLM2.5,PARALLEL,CLEAN,TOX_INI,PLACEBO,4,4,1.0,4,0,0,14
+file_format_boundary,,InternLM2.5,PARALLEL,DISRUPT,DEPLOYMENT_YAML,BASE,4,3,0.75,4,0,0,19
+file_format_boundary,,InternLM2.5,PARALLEL,DISRUPT,DEPLOYMENT_YAML,PLACEBO,4,2,0.5,4,0,0,20
+file_format_boundary,,InternLM2.5,PARALLEL,DISRUPT,DOCKERFILE,BASE,4,3,0.75,4,0,0,11
+file_format_boundary,,InternLM2.5,PARALLEL,DISRUPT,DOCKERFILE,PLACEBO,4,3,0.75,4,0,0,14
+file_format_boundary,,InternLM2.5,PARALLEL,DISRUPT,GITHUB_ACTIONS,BASE,4,2,0.5,4,0,0,17
+file_format_boundary,,InternLM2.5,PARALLEL,DISRUPT,GITHUB_ACTIONS,PLACEBO,4,3,0.75,4,0,0,14
+file_format_boundary,,InternLM2.5,PARALLEL,DISRUPT,LOCKFILE,BASE,4,4,1.0,4,0,0,19
+file_format_boundary,,InternLM2.5,PARALLEL,DISRUPT,LOCKFILE,PLACEBO,4,4,1.0,4,0,0,19
+file_format_boundary,,InternLM2.5,PARALLEL,DISRUPT,PRECOMMIT_YAML,BASE,4,3,0.75,4,0,0,12
+file_format_boundary,,InternLM2.5,PARALLEL,DISRUPT,PRECOMMIT_YAML,PLACEBO,4,3,0.75,4,0,0,12
+file_format_boundary,,InternLM2.5,PARALLEL,DISRUPT,TOX_INI,BASE,4,4,1.0,4,0,0,11
+file_format_boundary,,InternLM2.5,PARALLEL,DISRUPT,TOX_INI,PLACEBO,4,4,1.0,4,0,0,14
+file_format_boundary,,InternLM2.5,SERIAL,CLEAN,DEPLOYMENT_YAML,BASE,4,4,1.0,4,0,0,16
+file_format_boundary,,InternLM2.5,SERIAL,CLEAN,DEPLOYMENT_YAML,PLACEBO,4,4,1.0,4,0,0,12
+file_format_boundary,,InternLM2.5,SERIAL,CLEAN,DOCKERFILE,BASE,4,4,1.0,4,0,0,9
+file_format_boundary,,InternLM2.5,SERIAL,CLEAN,DOCKERFILE,PLACEBO,4,4,1.0,4,0,0,11
+file_format_boundary,,InternLM2.5,SERIAL,CLEAN,GITHUB_ACTIONS,BASE,4,4,1.0,4,0,0,17
+file_format_boundary,,InternLM2.5,SERIAL,CLEAN,GITHUB_ACTIONS,PLACEBO,4,4,1.0,4,0,0,17
+file_format_boundary,,InternLM2.5,SERIAL,CLEAN,LOCKFILE,BASE,4,4,1.0,4,0,0,14
+file_format_boundary,,InternLM2.5,SERIAL,CLEAN,LOCKFILE,PLACEBO,4,4,1.0,4,0,0,14
+file_format_boundary,,InternLM2.5,SERIAL,CLEAN,PRECOMMIT_YAML,BASE,4,4,1.0,4,0,0,13
+file_format_boundary,,InternLM2.5,SERIAL,CLEAN,PRECOMMIT_YAML,PLACEBO,4,4,1.0,4,0,0,12
+file_format_boundary,,InternLM2.5,SERIAL,CLEAN,TOX_INI,BASE,4,4,1.0,4,0,0,12
+file_format_boundary,,InternLM2.5,SERIAL,CLEAN,TOX_INI,PLACEBO,4,4,1.0,4,0,0,10
+file_format_boundary,,InternLM2.5,SERIAL,DISRUPT,DEPLOYMENT_YAML,BASE,4,4,1.0,4,0,0,16
+file_format_boundary,,InternLM2.5,SERIAL,DISRUPT,DEPLOYMENT_YAML,PLACEBO,4,4,1.0,4,0,0,13
+file_format_boundary,,InternLM2.5,SERIAL,DISRUPT,DOCKERFILE,BASE,4,3,0.75,4,0,0,11
+file_format_boundary,,InternLM2.5,SERIAL,DISRUPT,DOCKERFILE,PLACEBO,4,3,0.75,4,0,0,11
+file_format_boundary,,InternLM2.5,SERIAL,DISRUPT,GITHUB_ACTIONS,BASE,4,2,0.5,4,0,0,17
+file_format_boundary,,InternLM2.5,SERIAL,DISRUPT,GITHUB_ACTIONS,PLACEBO,4,2,0.5,4,0,0,17
+file_format_boundary,,InternLM2.5,SERIAL,DISRUPT,LOCKFILE,BASE,4,4,1.0,4,0,0,18
+file_format_boundary,,InternLM2.5,SERIAL,DISRUPT,LOCKFILE,PLACEBO,4,4,1.0,4,0,0,18
+file_format_boundary,,InternLM2.5,SERIAL,DISRUPT,PRECOMMIT_YAML,BASE,4,3,0.75,4,0,0,14
+file_format_boundary,,InternLM2.5,SERIAL,DISRUPT,PRECOMMIT_YAML,PLACEBO,4,4,1.0,4,0,0,13
+file_format_boundary,,InternLM2.5,SERIAL,DISRUPT,TOX_INI,BASE,4,4,1.0,4,0,0,12
+file_format_boundary,,InternLM2.5,SERIAL,DISRUPT,TOX_INI,PLACEBO,4,4,1.0,4,0,0,10
+file_format_boundary,,Qwen3,PARALLEL,CLEAN,DEPLOYMENT_YAML,BASE,4,4,1.0,4,0,0,7
+file_format_boundary,,Qwen3,PARALLEL,CLEAN,DEPLOYMENT_YAML,PLACEBO,4,4,1.0,4,0,0,8
+file_format_boundary,,Qwen3,PARALLEL,CLEAN,DOCKERFILE,BASE,4,4,1.0,4,0,0,8
+file_format_boundary,,Qwen3,PARALLEL,CLEAN,DOCKERFILE,PLACEBO,4,4,1.0,4,0,0,8
+file_format_boundary,,Qwen3,PARALLEL,CLEAN,GITHUB_ACTIONS,BASE,4,3,0.75,4,0,0,8
+file_format_boundary,,Qwen3,PARALLEL,CLEAN,GITHUB_ACTIONS,PLACEBO,4,2,0.5,4,0,0,12
+file_format_boundary,,Qwen3,PARALLEL,CLEAN,LOCKFILE,BASE,4,3,0.75,4,0,0,7
+file_format_boundary,,Qwen3,PARALLEL,CLEAN,LOCKFILE,PLACEBO,4,3,0.75,4,0,0,8
+file_format_boundary,,Qwen3,PARALLEL,CLEAN,PRECOMMIT_YAML,BASE,4,4,1.0,4,0,0,8
+file_format_boundary,,Qwen3,PARALLEL,CLEAN,PRECOMMIT_YAML,PLACEBO,4,4,1.0,4,0,0,9
+file_format_boundary,,Qwen3,PARALLEL,CLEAN,TOX_INI,BASE,4,4,1.0,4,0,0,8
+file_format_boundary,,Qwen3,PARALLEL,CLEAN,TOX_INI,PLACEBO,4,4,1.0,4,0,0,8
+file_format_boundary,,Qwen3,PARALLEL,DISRUPT,DEPLOYMENT_YAML,BASE,4,4,1.0,4,0,0,8
+file_format_boundary,,Qwen3,PARALLEL,DISRUPT,DEPLOYMENT_YAML,PLACEBO,4,4,1.0,4,0,0,10
+file_format_boundary,,Qwen3,PARALLEL,DISRUPT,DOCKERFILE,BASE,4,4,1.0,4,0,0,10
+file_format_boundary,,Qwen3,PARALLEL,DISRUPT,DOCKERFILE,PLACEBO,4,4,1.0,4,0,0,9
+file_format_boundary,,Qwen3,PARALLEL,DISRUPT,GITHUB_ACTIONS,BASE,4,3,0.75,4,0,0,10
+file_format_boundary,,Qwen3,PARALLEL,DISRUPT,GITHUB_ACTIONS,PLACEBO,4,3,0.75,4,0,0,12
+file_format_boundary,,Qwen3,PARALLEL,DISRUPT,LOCKFILE,BASE,4,3,0.75,4,0,0,8
+file_format_boundary,,Qwen3,PARALLEL,DISRUPT,LOCKFILE,PLACEBO,4,3,0.75,4,0,0,9
+file_format_boundary,,Qwen3,PARALLEL,DISRUPT,PRECOMMIT_YAML,BASE,4,4,1.0,4,0,0,12
+file_format_boundary,,Qwen3,PARALLEL,DISRUPT,PRECOMMIT_YAML,PLACEBO,4,4,1.0,4,0,0,11
+file_format_boundary,,Qwen3,PARALLEL,DISRUPT,TOX_INI,BASE,4,4,1.0,4,0,0,10
+file_format_boundary,,Qwen3,PARALLEL,DISRUPT,TOX_INI,PLACEBO,4,3,0.75,4,0,0,10
+file_format_boundary,,Qwen3,SERIAL,CLEAN,DEPLOYMENT_YAML,BASE,4,4,1.0,4,0,0,7
+file_format_boundary,,Qwen3,SERIAL,CLEAN,DEPLOYMENT_YAML,PLACEBO,4,4,1.0,4,0,0,7
+file_format_boundary,,Qwen3,SERIAL,CLEAN,DOCKERFILE,BASE,4,4,1.0,4,0,0,8
+file_format_boundary,,Qwen3,SERIAL,CLEAN,DOCKERFILE,PLACEBO,4,4,1.0,4,0,0,8
+file_format_boundary,,Qwen3,SERIAL,CLEAN,GITHUB_ACTIONS,BASE,4,4,1.0,4,0,0,9
+file_format_boundary,,Qwen3,SERIAL,CLEAN,GITHUB_ACTIONS,PLACEBO,4,3,0.75,4,0,0,7
+file_format_boundary,,Qwen3,SERIAL,CLEAN,LOCKFILE,BASE,4,4,1.0,4,0,0,8
+file_format_boundary,,Qwen3,SERIAL,CLEAN,LOCKFILE,PLACEBO,4,4,1.0,4,0,0,7
+file_format_boundary,,Qwen3,SERIAL,CLEAN,PRECOMMIT_YAML,BASE,4,4,1.0,4,0,0,9
+file_format_boundary,,Qwen3,SERIAL,CLEAN,PRECOMMIT_YAML,PLACEBO,4,4,1.0,4,0,0,9
+file_format_boundary,,Qwen3,SERIAL,CLEAN,TOX_INI,BASE,4,4,1.0,4,0,0,8
+file_format_boundary,,Qwen3,SERIAL,CLEAN,TOX_INI,PLACEBO,4,4,1.0,4,0,0,8
+file_format_boundary,,Qwen3,SERIAL,DISRUPT,DEPLOYMENT_YAML,BASE,4,4,1.0,4,0,0,9
+file_format_boundary,,Qwen3,SERIAL,DISRUPT,DEPLOYMENT_YAML,PLACEBO,4,3,0.75,4,0,0,9
+file_format_boundary,,Qwen3,SERIAL,DISRUPT,DOCKERFILE,BASE,4,4,1.0,4,0,0,10
+file_format_boundary,,Qwen3,SERIAL,DISRUPT,DOCKERFILE,PLACEBO,4,4,1.0,4,0,0,10
+file_format_boundary,,Qwen3,SERIAL,DISRUPT,GITHUB_ACTIONS,BASE,4,4,1.0,4,0,0,9
+file_format_boundary,,Qwen3,SERIAL,DISRUPT,GITHUB_ACTIONS,PLACEBO,4,3,0.75,4,0,0,7
+file_format_boundary,,Qwen3,SERIAL,DISRUPT,LOCKFILE,BASE,4,4,1.0,4,0,0,8
+file_format_boundary,,Qwen3,SERIAL,DISRUPT,LOCKFILE,PLACEBO,4,3,0.75,4,0,0,7
+file_format_boundary,,Qwen3,SERIAL,DISRUPT,PRECOMMIT_YAML,BASE,4,4,1.0,4,0,0,10
+file_format_boundary,,Qwen3,SERIAL,DISRUPT,PRECOMMIT_YAML,PLACEBO,4,4,1.0,4,0,0,10
+file_format_boundary,,Qwen3,SERIAL,DISRUPT,TOX_INI,BASE,4,4,1.0,4,0,0,9
+file_format_boundary,,Qwen3,SERIAL,DISRUPT,TOX_INI,PLACEBO,4,4,1.0,4,0,0,11
+large_repository_matched_prompts,,Gemma3,PARALLEL,CLEAN,BASE,BASE,360,360,1.0,360,0,0,716
+large_repository_matched_prompts,,Gemma3,PARALLEL,CLEAN,N,N_LONG,360,360,1.0,360,0,0,716
+large_repository_matched_prompts,,Gemma3,PARALLEL,CLEAN,N,N_MEDIUM,360,360,1.0,360,0,0,720
+large_repository_matched_prompts,,Gemma3,PARALLEL,CLEAN,N,N_SHORT,360,360,1.0,360,0,0,720
+large_repository_matched_prompts,,Gemma3,PARALLEL,CLEAN,P,P_LONG,360,0,0.0,0,360,0,0
+large_repository_matched_prompts,,Gemma3,PARALLEL,CLEAN,P,P_MEDIUM,360,359,0.9972222222222222,360,0,0,626
+large_repository_matched_prompts,,Gemma3,PARALLEL,CLEAN,P,P_SHORT,360,360,1.0,360,0,0,719
+large_repository_matched_prompts,,Gemma3,PARALLEL,DISRUPT,BASE,BASE,360,360,1.0,360,0,0,1073
+large_repository_matched_prompts,,Gemma3,PARALLEL,DISRUPT,N,N_LONG,360,360,1.0,360,0,0,1074
+large_repository_matched_prompts,,Gemma3,PARALLEL,DISRUPT,N,N_MEDIUM,360,360,1.0,360,0,0,1080
+large_repository_matched_prompts,,Gemma3,PARALLEL,DISRUPT,N,N_SHORT,360,360,1.0,360,0,0,1080
+large_repository_matched_prompts,,Gemma3,PARALLEL,DISRUPT,P,P_LONG,360,0,0.0,0,360,0,0
+large_repository_matched_prompts,,Gemma3,PARALLEL,DISRUPT,P,P_MEDIUM,360,360,1.0,360,0,0,904
+large_repository_matched_prompts,,Gemma3,PARALLEL,DISRUPT,P,P_SHORT,360,360,1.0,360,0,0,1075
+large_repository_matched_prompts,,Gemma3,SERIAL,CLEAN,BASE,BASE,360,360,1.0,360,0,0,722
+large_repository_matched_prompts,,Gemma3,SERIAL,CLEAN,N,N_LONG,360,360,1.0,360,0,0,717
+large_repository_matched_prompts,,Gemma3,SERIAL,CLEAN,N,N_MEDIUM,360,360,1.0,360,0,0,719
+large_repository_matched_prompts,,Gemma3,SERIAL,CLEAN,N,N_SHORT,360,360,1.0,360,0,0,719
+large_repository_matched_prompts,,Gemma3,SERIAL,CLEAN,P,P_LONG,360,0,0.0,0,360,0,0
+large_repository_matched_prompts,,Gemma3,SERIAL,CLEAN,P,P_MEDIUM,360,358,0.9944444444444445,360,0,0,725
+large_repository_matched_prompts,,Gemma3,SERIAL,CLEAN,P,P_SHORT,360,336,0.9333333333333333,336,24,0,676
+large_repository_matched_prompts,,Gemma3,SERIAL,DISRUPT,BASE,BASE,360,358,0.9944444444444445,360,0,0,1076
+large_repository_matched_prompts,,Gemma3,SERIAL,DISRUPT,N,N_LONG,360,348,0.9666666666666667,360,0,0,1059
+large_repository_matched_prompts,,Gemma3,SERIAL,DISRUPT,N,N_MEDIUM,360,358,0.9944444444444445,360,0,0,1073
+large_repository_matched_prompts,,Gemma3,SERIAL,DISRUPT,N,N_SHORT,360,359,0.9972222222222222,360,0,0,1075
+large_repository_matched_prompts,,Gemma3,SERIAL,DISRUPT,P,P_LONG,360,0,0.0,0,360,0,0
+large_repository_matched_prompts,,Gemma3,SERIAL,DISRUPT,P,P_MEDIUM,360,354,0.9833333333333333,360,0,0,1057
+large_repository_matched_prompts,,Gemma3,SERIAL,DISRUPT,P,P_SHORT,360,328,0.9111111111111111,333,27,0,989
+large_repository_matched_prompts,,InternLM2.5,PARALLEL,CLEAN,BASE,BASE,360,354,0.9833333333333333,360,0,0,823
+large_repository_matched_prompts,,InternLM2.5,PARALLEL,CLEAN,N,N_LONG,360,352,0.9777777777777777,359,1,0,791
+large_repository_matched_prompts,,InternLM2.5,PARALLEL,CLEAN,N,N_MEDIUM,360,350,0.9722222222222222,359,1,0,847
+large_repository_matched_prompts,,InternLM2.5,PARALLEL,CLEAN,N,N_SHORT,360,358,0.9944444444444445,359,1,0,818
+large_repository_matched_prompts,,InternLM2.5,PARALLEL,CLEAN,P,P_LONG,360,95,0.2638888888888889,100,260,0,193
+large_repository_matched_prompts,,InternLM2.5,PARALLEL,CLEAN,P,P_MEDIUM,360,341,0.9472222222222222,349,11,0,557
+large_repository_matched_prompts,,InternLM2.5,PARALLEL,CLEAN,P,P_SHORT,360,358,0.9944444444444445,359,1,0,801
+large_repository_matched_prompts,,InternLM2.5,PARALLEL,DISRUPT,BASE,BASE,360,356,0.9888888888888889,357,2,0,1353
+large_repository_matched_prompts,,InternLM2.5,PARALLEL,DISRUPT,N,N_LONG,360,356,0.9888888888888889,357,2,0,1285
+large_repository_matched_prompts,,InternLM2.5,PARALLEL,DISRUPT,N,N_MEDIUM,360,357,0.9916666666666667,358,1,0,1276
+large_repository_matched_prompts,,InternLM2.5,PARALLEL,DISRUPT,N,N_SHORT,360,358,0.9944444444444445,359,0,0,1314
+large_repository_matched_prompts,,InternLM2.5,PARALLEL,DISRUPT,P,P_LONG,360,107,0.2972222222222222,107,252,0,378
+large_repository_matched_prompts,,InternLM2.5,PARALLEL,DISRUPT,P,P_MEDIUM,360,355,0.9861111111111112,356,4,0,838
+large_repository_matched_prompts,,InternLM2.5,PARALLEL,DISRUPT,P,P_SHORT,360,356,0.9888888888888889,357,1,0,1328
+large_repository_matched_prompts,,InternLM2.5,SERIAL,CLEAN,BASE,BASE,360,359,0.9972222222222222,360,0,0,833
+large_repository_matched_prompts,,InternLM2.5,SERIAL,CLEAN,N,N_LONG,360,356,0.9888888888888889,358,2,0,799
+large_repository_matched_prompts,,InternLM2.5,SERIAL,CLEAN,N,N_MEDIUM,360,354,0.9833333333333333,359,1,0,855
+large_repository_matched_prompts,,InternLM2.5,SERIAL,CLEAN,N,N_SHORT,360,359,0.9972222222222222,360,0,0,825
+large_repository_matched_prompts,,InternLM2.5,SERIAL,CLEAN,P,P_LONG,360,234,0.65,237,123,0,531
+large_repository_matched_prompts,,InternLM2.5,SERIAL,CLEAN,P,P_MEDIUM,360,360,1.0,360,0,0,785
+large_repository_matched_prompts,,InternLM2.5,SERIAL,CLEAN,P,P_SHORT,360,359,0.9972222222222222,359,1,0,802
+large_repository_matched_prompts,,InternLM2.5,SERIAL,DISRUPT,BASE,BASE,360,356,0.9888888888888889,357,2,0,1369
+large_repository_matched_prompts,,InternLM2.5,SERIAL,DISRUPT,N,N_LONG,360,358,0.9944444444444445,359,0,0,1298
+large_repository_matched_prompts,,InternLM2.5,SERIAL,DISRUPT,N,N_MEDIUM,360,359,0.9972222222222222,360,0,0,1296
+large_repository_matched_prompts,,InternLM2.5,SERIAL,DISRUPT,N,N_SHORT,360,358,0.9944444444444445,359,0,0,1337
+large_repository_matched_prompts,,InternLM2.5,SERIAL,DISRUPT,P,P_LONG,360,226,0.6277777777777778,227,131,1,869
+large_repository_matched_prompts,,InternLM2.5,SERIAL,DISRUPT,P,P_MEDIUM,360,356,0.9888888888888889,357,1,1,1312
+large_repository_matched_prompts,,InternLM2.5,SERIAL,DISRUPT,P,P_SHORT,360,357,0.9916666666666667,358,0,0,1330
+large_repository_matched_prompts,,Qwen3,PARALLEL,CLEAN,BASE,BASE,360,360,1.0,360,0,0,483
+large_repository_matched_prompts,,Qwen3,PARALLEL,CLEAN,N,N_LONG,360,360,1.0,360,0,0,516
+large_repository_matched_prompts,,Qwen3,PARALLEL,CLEAN,N,N_MEDIUM,360,360,1.0,360,0,0,466
+large_repository_matched_prompts,,Qwen3,PARALLEL,CLEAN,N,N_SHORT,360,360,1.0,360,0,0,502
+large_repository_matched_prompts,,Qwen3,PARALLEL,CLEAN,P,P_LONG,360,360,1.0,360,0,0,366
+large_repository_matched_prompts,,Qwen3,PARALLEL,CLEAN,P,P_MEDIUM,360,360,1.0,360,0,0,362
+large_repository_matched_prompts,,Qwen3,PARALLEL,CLEAN,P,P_SHORT,360,360,1.0,360,0,0,475
+large_repository_matched_prompts,,Qwen3,PARALLEL,DISRUPT,BASE,BASE,360,360,1.0,360,0,0,614
+large_repository_matched_prompts,,Qwen3,PARALLEL,DISRUPT,N,N_LONG,360,360,1.0,360,0,0,726
+large_repository_matched_prompts,,Qwen3,PARALLEL,DISRUPT,N,N_MEDIUM,360,360,1.0,360,0,0,562
+large_repository_matched_prompts,,Qwen3,PARALLEL,DISRUPT,N,N_SHORT,360,360,1.0,360,0,0,647
+large_repository_matched_prompts,,Qwen3,PARALLEL,DISRUPT,P,P_LONG,360,360,1.0,360,0,0,373
+large_repository_matched_prompts,,Qwen3,PARALLEL,DISRUPT,P,P_MEDIUM,360,360,1.0,360,0,0,392
+large_repository_matched_prompts,,Qwen3,PARALLEL,DISRUPT,P,P_SHORT,360,360,1.0,360,0,0,619
+large_repository_matched_prompts,,Qwen3,SERIAL,CLEAN,BASE,BASE,360,360,1.0,360,0,0,712
+large_repository_matched_prompts,,Qwen3,SERIAL,CLEAN,N,N_LONG,360,360,1.0,360,0,0,717
+large_repository_matched_prompts,,Qwen3,SERIAL,CLEAN,N,N_MEDIUM,360,360,1.0,360,0,0,715
+large_repository_matched_prompts,,Qwen3,SERIAL,CLEAN,N,N_SHORT,360,360,1.0,360,0,0,719
+large_repository_matched_prompts,,Qwen3,SERIAL,CLEAN,P,P_LONG,360,358,0.9944444444444445,358,0,2,715
+large_repository_matched_prompts,,Qwen3,SERIAL,CLEAN,P,P_MEDIUM,360,301,0.8361111111111111,301,0,59,592
+large_repository_matched_prompts,,Qwen3,SERIAL,CLEAN,P,P_SHORT,360,359,0.9972222222222222,360,0,0,686
+large_repository_matched_prompts,,Qwen3,SERIAL,DISRUPT,BASE,BASE,360,360,1.0,360,0,0,1023
+large_repository_matched_prompts,,Qwen3,SERIAL,DISRUPT,N,N_LONG,360,360,1.0,360,0,0,1011
+large_repository_matched_prompts,,Qwen3,SERIAL,DISRUPT,N,N_MEDIUM,360,360,1.0,360,0,0,1009
+large_repository_matched_prompts,,Qwen3,SERIAL,DISRUPT,N,N_SHORT,360,359,0.9972222222222222,360,0,0,1029
+large_repository_matched_prompts,,Qwen3,SERIAL,DISRUPT,P,P_LONG,360,359,0.9972222222222222,359,0,1,1059
+large_repository_matched_prompts,,Qwen3,SERIAL,DISRUPT,P,P_MEDIUM,360,300,0.8333333333333334,300,0,60,801
+large_repository_matched_prompts,,Qwen3,SERIAL,DISRUPT,P,P_SHORT,360,359,0.9972222222222222,360,0,0,920
+model_interface_comparisons,Set 1,Falcon3,PARALLEL,CLEAN,,BASE,48,3,0.0625,48,0,0,137
+model_interface_comparisons,Set 1,Falcon3,PARALLEL,CLEAN,,PLACEBO,48,1,0.020833333333333332,48,0,0,127
+model_interface_comparisons,Set 1,Falcon3,PARALLEL,DISRUPT,,BASE,48,0,0.0,48,0,0,137
+model_interface_comparisons,Set 1,Falcon3,PARALLEL,DISRUPT,,PLACEBO,48,0,0.0,48,0,0,125
+model_interface_comparisons,Set 1,Falcon3,SERIAL,CLEAN,,BASE,48,11,0.22916666666666666,48,0,0,101
+model_interface_comparisons,Set 1,Falcon3,SERIAL,CLEAN,,PLACEBO,48,5,0.10416666666666667,48,0,0,104
+model_interface_comparisons,Set 1,Falcon3,SERIAL,DISRUPT,,BASE,48,2,0.041666666666666664,34,0,0,98
+model_interface_comparisons,Set 1,Falcon3,SERIAL,DISRUPT,,PLACEBO,48,1,0.020833333333333332,38,0,0,101
+model_interface_comparisons,Set 1,Granite,PARALLEL,CLEAN,,BASE,48,46,0.9583333333333334,48,0,0,164
+model_interface_comparisons,Set 1,Granite,PARALLEL,CLEAN,,PLACEBO,48,43,0.8958333333333334,48,0,0,156
+model_interface_comparisons,Set 1,Granite,PARALLEL,DISRUPT,,BASE,48,44,0.9166666666666666,48,0,0,164
+model_interface_comparisons,Set 1,Granite,PARALLEL,DISRUPT,,PLACEBO,48,39,0.8125,48,0,0,156
+model_interface_comparisons,Set 1,Granite,SERIAL,CLEAN,,BASE,48,28,0.5833333333333334,48,0,0,143
+model_interface_comparisons,Set 1,Granite,SERIAL,CLEAN,,PLACEBO,48,35,0.7291666666666666,48,0,0,123
+model_interface_comparisons,Set 1,Granite,SERIAL,DISRUPT,,BASE,48,12,0.25,28,0,0,138
+model_interface_comparisons,Set 1,Granite,SERIAL,DISRUPT,,PLACEBO,48,29,0.6041666666666666,41,0,0,123
+model_interface_comparisons,Set 1,Llama-Hermes,PARALLEL,CLEAN,,BASE,48,46,0.9583333333333334,48,0,0,210
+model_interface_comparisons,Set 1,Llama-Hermes,PARALLEL,CLEAN,,PLACEBO,48,46,0.9583333333333334,48,0,0,197
+model_interface_comparisons,Set 1,Llama-Hermes,PARALLEL,DISRUPT,,BASE,48,21,0.4375,45,0,0,209
+model_interface_comparisons,Set 1,Llama-Hermes,PARALLEL,DISRUPT,,PLACEBO,48,28,0.5833333333333334,47,0,0,197
+model_interface_comparisons,Set 1,Llama-Hermes,SERIAL,CLEAN,,BASE,48,45,0.9375,48,0,0,152
+model_interface_comparisons,Set 1,Llama-Hermes,SERIAL,CLEAN,,PLACEBO,48,43,0.8958333333333334,48,0,0,135
+model_interface_comparisons,Set 1,Llama-Hermes,SERIAL,DISRUPT,,BASE,48,28,0.5833333333333334,38,0,0,147
+model_interface_comparisons,Set 1,Llama-Hermes,SERIAL,DISRUPT,,PLACEBO,48,32,0.6666666666666666,40,0,0,131
+model_interface_comparisons,Set 2,Gemma3,PARALLEL,CLEAN,,BASE,48,48,1.0,48,0,0,112
+model_interface_comparisons,Set 2,Gemma3,PARALLEL,CLEAN,,PLACEBO,48,48,1.0,48,0,0,118
+model_interface_comparisons,Set 2,Gemma3,PARALLEL,DISRUPT,,BASE,48,26,0.5416666666666666,48,0,0,130
+model_interface_comparisons,Set 2,Gemma3,PARALLEL,DISRUPT,,PLACEBO,48,14,0.2916666666666667,48,0,0,126
+model_interface_comparisons,Set 2,Gemma3,SERIAL,CLEAN,,BASE,48,48,1.0,48,0,0,89
+model_interface_comparisons,Set 2,Gemma3,SERIAL,CLEAN,,PLACEBO,48,48,1.0,48,0,0,82
+model_interface_comparisons,Set 2,Gemma3,SERIAL,DISRUPT,,BASE,48,31,0.6458333333333334,48,0,0,111
+model_interface_comparisons,Set 2,Gemma3,SERIAL,DISRUPT,,PLACEBO,48,11,0.22916666666666666,48,0,0,94
+model_interface_comparisons,Set 2,InternLM2.5,PARALLEL,CLEAN,,BASE,48,46,0.9583333333333334,46,0,0,159
+model_interface_comparisons,Set 2,InternLM2.5,PARALLEL,CLEAN,,PLACEBO,48,44,0.9166666666666666,45,0,0,174
+model_interface_comparisons,Set 2,InternLM2.5,PARALLEL,DISRUPT,,BASE,48,19,0.3958333333333333,46,0,0,177
+model_interface_comparisons,Set 2,InternLM2.5,PARALLEL,DISRUPT,,PLACEBO,48,25,0.5208333333333334,45,0,0,184
+model_interface_comparisons,Set 2,InternLM2.5,SERIAL,CLEAN,,BASE,48,47,0.9791666666666666,47,0,0,142
+model_interface_comparisons,Set 2,InternLM2.5,SERIAL,CLEAN,,PLACEBO,48,45,0.9375,45,0,0,114
+model_interface_comparisons,Set 2,InternLM2.5,SERIAL,DISRUPT,,BASE,48,23,0.4791666666666667,47,0,0,167
+model_interface_comparisons,Set 2,InternLM2.5,SERIAL,DISRUPT,,PLACEBO,48,29,0.6041666666666666,45,0,0,135
+model_interface_comparisons,Set 2,Qwen3,PARALLEL,CLEAN,,BASE,48,48,1.0,48,0,0,97
+model_interface_comparisons,Set 2,Qwen3,PARALLEL,CLEAN,,PLACEBO,48,47,0.9791666666666666,48,0,0,98
+model_interface_comparisons,Set 2,Qwen3,PARALLEL,DISRUPT,,BASE,48,20,0.4166666666666667,48,0,0,135
+model_interface_comparisons,Set 2,Qwen3,PARALLEL,DISRUPT,,PLACEBO,48,22,0.4583333333333333,48,0,0,133
+model_interface_comparisons,Set 2,Qwen3,SERIAL,CLEAN,,BASE,48,48,1.0,48,0,0,72
+model_interface_comparisons,Set 2,Qwen3,SERIAL,CLEAN,,PLACEBO,48,48,1.0,48,0,0,76
+model_interface_comparisons,Set 2,Qwen3,SERIAL,DISRUPT,,BASE,48,18,0.375,48,0,0,113
+model_interface_comparisons,Set 2,Qwen3,SERIAL,DISRUPT,,PLACEBO,48,6,0.125,48,0,0,103
+model_interface_comparisons,Set 2,Yi-1.5,PARALLEL,CLEAN,,BASE,48,48,1.0,48,0,0,97
+model_interface_comparisons,Set 2,Yi-1.5,PARALLEL,CLEAN,,PLACEBO,48,48,1.0,48,0,0,121
+model_interface_comparisons,Set 2,Yi-1.5,PARALLEL,DISRUPT,,BASE,48,18,0.375,47,0,0,147
+model_interface_comparisons,Set 2,Yi-1.5,PARALLEL,DISRUPT,,PLACEBO,48,12,0.25,48,0,0,151
+model_interface_comparisons,Set 2,Yi-1.5,SERIAL,CLEAN,,BASE,48,48,1.0,48,0,0,74
+model_interface_comparisons,Set 2,Yi-1.5,SERIAL,CLEAN,,PLACEBO,48,48,1.0,48,0,0,78
+model_interface_comparisons,Set 2,Yi-1.5,SERIAL,DISRUPT,,BASE,48,3,0.0625,48,0,0,79
+model_interface_comparisons,Set 2,Yi-1.5,SERIAL,DISRUPT,,PLACEBO,48,3,0.0625,48,0,0,89
+model_interface_comparisons,Set 3,Gemma3,PARALLEL,CLEAN,,BASE,48,48,1.0,48,0,0,100
+model_interface_comparisons,Set 3,Gemma3,PARALLEL,CLEAN,,PLACEBO,48,47,0.9791666666666666,48,0,0,111
+model_interface_comparisons,Set 3,Gemma3,PARALLEL,DISRUPT,,BASE,48,45,0.9375,48,0,0,122
+model_interface_comparisons,Set 3,Gemma3,PARALLEL,DISRUPT,,PLACEBO,48,29,0.6041666666666666,48,0,0,119
+model_interface_comparisons,Set 3,Gemma3,SERIAL,CLEAN,,BASE,48,48,1.0,48,0,0,93
+model_interface_comparisons,Set 3,Gemma3,SERIAL,CLEAN,,PLACEBO,48,48,1.0,48,0,0,94
+model_interface_comparisons,Set 3,Gemma3,SERIAL,DISRUPT,,BASE,48,44,0.9166666666666666,48,0,0,117
+model_interface_comparisons,Set 3,Gemma3,SERIAL,DISRUPT,,PLACEBO,48,43,0.8958333333333334,48,0,0,116
+model_interface_comparisons,Set 3,InternLM2.5,PARALLEL,CLEAN,,BASE,48,48,1.0,48,0,0,121
+model_interface_comparisons,Set 3,InternLM2.5,PARALLEL,CLEAN,,PLACEBO,48,48,1.0,48,0,0,136
+model_interface_comparisons,Set 3,InternLM2.5,PARALLEL,DISRUPT,,BASE,48,41,0.8541666666666666,48,0,0,156
+model_interface_comparisons,Set 3,InternLM2.5,PARALLEL,DISRUPT,,PLACEBO,48,36,0.75,48,0,0,166
+model_interface_comparisons,Set 3,InternLM2.5,SERIAL,CLEAN,,BASE,48,47,0.9791666666666666,47,0,0,116
+model_interface_comparisons,Set 3,InternLM2.5,SERIAL,CLEAN,,PLACEBO,48,47,0.9791666666666666,47,0,0,120
+model_interface_comparisons,Set 3,InternLM2.5,SERIAL,DISRUPT,,BASE,48,44,0.9166666666666666,47,0,0,150
+model_interface_comparisons,Set 3,InternLM2.5,SERIAL,DISRUPT,,PLACEBO,48,43,0.8958333333333334,47,0,0,159
+model_interface_comparisons,Set 3,Qwen3,PARALLEL,CLEAN,,BASE,48,48,1.0,48,0,0,107
+model_interface_comparisons,Set 3,Qwen3,PARALLEL,CLEAN,,PLACEBO,48,48,1.0,48,0,0,109
+model_interface_comparisons,Set 3,Qwen3,PARALLEL,DISRUPT,,BASE,48,43,0.8958333333333334,48,0,0,139
+model_interface_comparisons,Set 3,Qwen3,PARALLEL,DISRUPT,,PLACEBO,48,40,0.8333333333333334,48,0,0,137
+model_interface_comparisons,Set 3,Qwen3,SERIAL,CLEAN,,BASE,48,48,1.0,48,0,0,102
+model_interface_comparisons,Set 3,Qwen3,SERIAL,CLEAN,,PLACEBO,48,48,1.0,48,0,0,102
+model_interface_comparisons,Set 3,Qwen3,SERIAL,DISRUPT,,BASE,48,47,0.9791666666666666,48,0,0,137
+model_interface_comparisons,Set 3,Qwen3,SERIAL,DISRUPT,,PLACEBO,48,46,0.9583333333333334,48,0,0,139
+repeated_server_sessions,,Gemma3,PARALLEL,CLEAN,,N_LONG,144,0,0.0,0,144,0,0
+repeated_server_sessions,,Gemma3,PARALLEL,CLEAN,,P_LONG,144,5,0.034722222222222224,5,139,0,10
+repeated_server_sessions,,Qwen3,PARALLEL,CLEAN,,N_MEDIUM,144,144,1.0,144,0,0,215
+repeated_server_sessions,,Qwen3,PARALLEL,CLEAN,,P_MEDIUM,144,144,1.0,144,0,0,144
+repeated_server_sessions,,Qwen3,SERIAL,DISRUPT,,N_SHORT,144,144,1.0,144,0,0,420
+repeated_server_sessions,,Qwen3,SERIAL,DISRUPT,,P_SHORT,144,144,1.0,144,0,0,356
+required_source_intervention,,Gemma3,PARALLEL,,NATURAL,BASE,24,13,0.5416666666666666,24,0,0,108
+required_source_intervention,,Gemma3,PARALLEL,,NATURAL,PLACEBO,24,4,0.16666666666666666,24,0,0,78
+required_source_intervention,,Gemma3,PARALLEL,,RECOVERY_BLOCKED_ALT,BASE,24,15,0.625,24,0,0,103
+required_source_intervention,,Gemma3,PARALLEL,,RECOVERY_BLOCKED_ALT,PLACEBO,24,10,0.4166666666666667,24,0,0,80
+required_source_intervention,,Gemma3,PARALLEL,,RECOVERY_PRELOAD,BASE,24,24,1.0,24,0,0,0
+required_source_intervention,,Gemma3,PARALLEL,,RECOVERY_PRELOAD,PLACEBO,24,24,1.0,24,0,0,109
+required_source_intervention,,Gemma3,PARALLEL,,SHAM_PRELOAD,BASE,24,17,0.7083333333333334,24,0,0,119
+required_source_intervention,,Gemma3,PARALLEL,,SHAM_PRELOAD,PLACEBO,24,5,0.20833333333333334,24,0,0,79
+required_source_intervention,,Gemma3,SERIAL,,NATURAL,BASE,24,12,0.5,24,0,0,108
+required_source_intervention,,Gemma3,SERIAL,,NATURAL,PLACEBO,24,9,0.375,24,0,0,94
+required_source_intervention,,Gemma3,SERIAL,,RECOVERY_BLOCKED_ALT,BASE,24,20,0.8333333333333334,24,0,0,105
+required_source_intervention,,Gemma3,SERIAL,,RECOVERY_BLOCKED_ALT,PLACEBO,24,15,0.625,24,0,0,90
+required_source_intervention,,Gemma3,SERIAL,,RECOVERY_PRELOAD,BASE,24,24,1.0,24,0,0,0
+required_source_intervention,,Gemma3,SERIAL,,RECOVERY_PRELOAD,PLACEBO,24,24,1.0,24,0,0,92
+required_source_intervention,,Gemma3,SERIAL,,SHAM_PRELOAD,BASE,24,15,0.625,24,0,0,112
+required_source_intervention,,Gemma3,SERIAL,,SHAM_PRELOAD,PLACEBO,24,11,0.4583333333333333,24,0,0,91
+required_source_intervention,,InternLM2.5,PARALLEL,,NATURAL,BASE,24,17,0.7083333333333334,24,0,0,147
+required_source_intervention,,InternLM2.5,PARALLEL,,NATURAL,PLACEBO,24,17,0.7083333333333334,24,0,2,152
+required_source_intervention,,InternLM2.5,PARALLEL,,RECOVERY_BLOCKED_ALT,BASE,24,24,1.0,24,0,0,135
+required_source_intervention,,InternLM2.5,PARALLEL,,RECOVERY_BLOCKED_ALT,PLACEBO,24,24,1.0,24,0,0,140
+required_source_intervention,,InternLM2.5,PARALLEL,,RECOVERY_PRELOAD,BASE,24,24,1.0,24,0,2,146
+required_source_intervention,,InternLM2.5,PARALLEL,,RECOVERY_PRELOAD,PLACEBO,24,24,1.0,24,0,1,154
+required_source_intervention,,InternLM2.5,PARALLEL,,SHAM_PRELOAD,BASE,24,15,0.625,24,0,3,178
+required_source_intervention,,InternLM2.5,PARALLEL,,SHAM_PRELOAD,PLACEBO,24,20,0.8333333333333334,24,0,0,162
+required_source_intervention,,InternLM2.5,SERIAL,,NATURAL,BASE,24,16,0.6666666666666666,20,0,0,150
+required_source_intervention,,InternLM2.5,SERIAL,,NATURAL,PLACEBO,24,16,0.6666666666666666,19,0,0,151
+required_source_intervention,,InternLM2.5,SERIAL,,RECOVERY_BLOCKED_ALT,BASE,24,22,0.9166666666666666,23,0,0,110
+required_source_intervention,,InternLM2.5,SERIAL,,RECOVERY_BLOCKED_ALT,PLACEBO,24,21,0.875,22,0,0,115
+required_source_intervention,,InternLM2.5,SERIAL,,RECOVERY_PRELOAD,BASE,24,19,0.7916666666666666,19,0,0,134
+required_source_intervention,,InternLM2.5,SERIAL,,RECOVERY_PRELOAD,PLACEBO,24,20,0.8333333333333334,20,0,0,141
+required_source_intervention,,InternLM2.5,SERIAL,,SHAM_PRELOAD,BASE,24,13,0.5416666666666666,16,0,0,166
+required_source_intervention,,InternLM2.5,SERIAL,,SHAM_PRELOAD,PLACEBO,24,17,0.7083333333333334,20,0,0,147
+required_source_intervention,,Qwen3,PARALLEL,,NATURAL,BASE,24,18,0.75,24,0,0,164
+required_source_intervention,,Qwen3,PARALLEL,,NATURAL,PLACEBO,24,17,0.7083333333333334,24,0,1,151
+required_source_intervention,,Qwen3,PARALLEL,,RECOVERY_BLOCKED_ALT,BASE,24,23,0.9583333333333334,24,0,0,134
+required_source_intervention,,Qwen3,PARALLEL,,RECOVERY_BLOCKED_ALT,PLACEBO,24,20,0.8333333333333334,24,0,1,136
+required_source_intervention,,Qwen3,PARALLEL,,RECOVERY_PRELOAD,BASE,24,24,1.0,24,0,0,4
+required_source_intervention,,Qwen3,PARALLEL,,RECOVERY_PRELOAD,PLACEBO,24,24,1.0,24,0,0,133
+required_source_intervention,,Qwen3,PARALLEL,,SHAM_PRELOAD,BASE,24,19,0.7916666666666666,24,0,0,153
+required_source_intervention,,Qwen3,PARALLEL,,SHAM_PRELOAD,PLACEBO,24,21,0.875,24,0,0,140
+required_source_intervention,,Qwen3,SERIAL,,NATURAL,BASE,24,4,0.16666666666666666,24,0,0,87
+required_source_intervention,,Qwen3,SERIAL,,NATURAL,PLACEBO,24,8,0.3333333333333333,24,0,0,97
+required_source_intervention,,Qwen3,SERIAL,,RECOVERY_BLOCKED_ALT,BASE,24,7,0.2916666666666667,24,0,0,75
+required_source_intervention,,Qwen3,SERIAL,,RECOVERY_BLOCKED_ALT,PLACEBO,24,5,0.20833333333333334,24,0,0,82
+required_source_intervention,,Qwen3,SERIAL,,RECOVERY_PRELOAD,BASE,24,24,1.0,24,0,0,35
+required_source_intervention,,Qwen3,SERIAL,,RECOVERY_PRELOAD,PLACEBO,24,24,1.0,24,0,0,86
+required_source_intervention,,Qwen3,SERIAL,,SHAM_PRELOAD,BASE,24,16,0.6666666666666666,23,0,0,120
+required_source_intervention,,Qwen3,SERIAL,,SHAM_PRELOAD,PLACEBO,24,10,0.4166666666666667,24,0,0,100
+required_source_intervention,,Yi-1.5,PARALLEL,,NATURAL,BASE,24,21,0.875,23,0,8,180
+required_source_intervention,,Yi-1.5,PARALLEL,,NATURAL,PLACEBO,24,16,0.6666666666666666,23,0,8,147
+required_source_intervention,,Yi-1.5,PARALLEL,,RECOVERY_BLOCKED_ALT,BASE,24,20,0.8333333333333334,23,0,8,162
+required_source_intervention,,Yi-1.5,PARALLEL,,RECOVERY_BLOCKED_ALT,PLACEBO,24,19,0.7916666666666666,23,0,8,147
+required_source_intervention,,Yi-1.5,PARALLEL,,RECOVERY_PRELOAD,BASE,24,23,0.9583333333333334,23,0,8,172
+required_source_intervention,,Yi-1.5,PARALLEL,,RECOVERY_PRELOAD,PLACEBO,24,22,0.9166666666666666,24,0,0,156
+required_source_intervention,,Yi-1.5,PARALLEL,,SHAM_PRELOAD,BASE,24,22,0.9166666666666666,24,0,1,182
+required_source_intervention,,Yi-1.5,PARALLEL,,SHAM_PRELOAD,PLACEBO,24,21,0.875,23,0,8,157
+required_source_intervention,,Yi-1.5,SERIAL,,NATURAL,BASE,24,15,0.625,20,0,0,146
+required_source_intervention,,Yi-1.5,SERIAL,,NATURAL,PLACEBO,24,14,0.5833333333333334,19,0,0,135
+required_source_intervention,,Yi-1.5,SERIAL,,RECOVERY_BLOCKED_ALT,BASE,24,18,0.75,22,0,0,130
+required_source_intervention,,Yi-1.5,SERIAL,,RECOVERY_BLOCKED_ALT,PLACEBO,24,20,0.8333333333333334,22,0,0,134
+required_source_intervention,,Yi-1.5,SERIAL,,RECOVERY_PRELOAD,BASE,24,22,0.9166666666666666,22,0,0,121
+required_source_intervention,,Yi-1.5,SERIAL,,RECOVERY_PRELOAD,PLACEBO,24,18,0.75,19,0,0,131
+required_source_intervention,,Yi-1.5,SERIAL,,SHAM_PRELOAD,BASE,24,17,0.7083333333333334,21,0,0,134
+required_source_intervention,,Yi-1.5,SERIAL,,SHAM_PRELOAD,PLACEBO,24,21,0.875,23,0,0,128
+same_run_prompt_comparison,,Gemma3,PARALLEL,CLEAN,BASE,BASE,48,48,1.0,48,0,0,125
+same_run_prompt_comparison,,Gemma3,PARALLEL,CLEAN,NEUTRAL,NEUTRAL,48,48,1.0,48,0,0,119
+same_run_prompt_comparison,,Gemma3,PARALLEL,CLEAN,PROCEDURAL,PROCEDURAL,48,48,1.0,48,0,0,121
+same_run_prompt_comparison,,Gemma3,PARALLEL,DISRUPT,BASE,BASE,48,42,0.875,48,0,0,135
+same_run_prompt_comparison,,Gemma3,PARALLEL,DISRUPT,NEUTRAL,NEUTRAL,48,37,0.7708333333333334,48,0,0,128
+same_run_prompt_comparison,,Gemma3,PARALLEL,DISRUPT,PROCEDURAL,PROCEDURAL,48,32,0.6666666666666666,48,0,0,127
+same_run_prompt_comparison,,Gemma3,SERIAL,CLEAN,BASE,BASE,48,48,1.0,48,0,0,102
+same_run_prompt_comparison,,Gemma3,SERIAL,CLEAN,NEUTRAL,NEUTRAL,48,48,1.0,48,0,0,104
+same_run_prompt_comparison,,Gemma3,SERIAL,CLEAN,PROCEDURAL,PROCEDURAL,48,43,0.8958333333333334,48,0,0,100
+same_run_prompt_comparison,,Gemma3,SERIAL,DISRUPT,BASE,BASE,48,38,0.7916666666666666,48,0,0,115
+same_run_prompt_comparison,,Gemma3,SERIAL,DISRUPT,NEUTRAL,NEUTRAL,48,29,0.6041666666666666,48,0,0,109
+same_run_prompt_comparison,,Gemma3,SERIAL,DISRUPT,PROCEDURAL,PROCEDURAL,48,32,0.6666666666666666,48,0,0,113
+same_run_prompt_comparison,,Qwen3,PARALLEL,CLEAN,BASE,BASE,48,47,0.9791666666666666,48,0,1,96
+same_run_prompt_comparison,,Qwen3,PARALLEL,CLEAN,NEUTRAL,NEUTRAL,48,47,0.9791666666666666,48,0,1,96
+same_run_prompt_comparison,,Qwen3,PARALLEL,CLEAN,PROCEDURAL,PROCEDURAL,48,47,0.9791666666666666,48,0,1,96
+same_run_prompt_comparison,,Qwen3,PARALLEL,DISRUPT,BASE,BASE,48,34,0.7083333333333334,48,0,1,119
+same_run_prompt_comparison,,Qwen3,PARALLEL,DISRUPT,NEUTRAL,NEUTRAL,48,39,0.8125,48,0,1,122
+same_run_prompt_comparison,,Qwen3,PARALLEL,DISRUPT,PROCEDURAL,PROCEDURAL,48,34,0.7083333333333334,48,0,2,116
+same_run_prompt_comparison,,Qwen3,SERIAL,CLEAN,BASE,BASE,48,48,1.0,48,0,0,99
+same_run_prompt_comparison,,Qwen3,SERIAL,CLEAN,NEUTRAL,NEUTRAL,48,48,1.0,48,0,0,99
+same_run_prompt_comparison,,Qwen3,SERIAL,CLEAN,PROCEDURAL,PROCEDURAL,48,48,1.0,48,0,0,99
+same_run_prompt_comparison,,Qwen3,SERIAL,DISRUPT,BASE,BASE,48,39,0.8125,48,0,0,130
+same_run_prompt_comparison,,Qwen3,SERIAL,DISRUPT,NEUTRAL,NEUTRAL,48,43,0.8958333333333334,48,0,0,137
+same_run_prompt_comparison,,Qwen3,SERIAL,DISRUPT,PROCEDURAL,PROCEDURAL,48,36,0.75,48,0,0,122
+six_pair_prompt_library,,Gemma3,PARALLEL,CLEAN,BASE,BASE,48,48,1.0,48,0,0,126
+six_pair_prompt_library,,Gemma3,PARALLEL,CLEAN,NEUTRAL,NEUTRAL,288,288,1.0,288,0,0,721
+six_pair_prompt_library,,Gemma3,PARALLEL,CLEAN,PROCEDURAL,PROCEDURAL,288,288,1.0,288,0,0,713
+six_pair_prompt_library,,Gemma3,PARALLEL,DISRUPT,BASE,BASE,48,43,0.8958333333333334,48,0,0,136
+six_pair_prompt_library,,Gemma3,PARALLEL,DISRUPT,NEUTRAL,NEUTRAL,288,231,0.8020833333333334,288,0,0,792
+six_pair_prompt_library,,Gemma3,PARALLEL,DISRUPT,PROCEDURAL,PROCEDURAL,288,226,0.7847222222222222,288,0,0,775
+six_pair_prompt_library,,Gemma3,SERIAL,CLEAN,BASE,BASE,48,48,1.0,48,0,0,102
+six_pair_prompt_library,,Gemma3,SERIAL,CLEAN,NEUTRAL,NEUTRAL,288,288,1.0,288,0,0,604
+six_pair_prompt_library,,Gemma3,SERIAL,CLEAN,PROCEDURAL,PROCEDURAL,288,277,0.9618055555555556,288,0,0,602
+six_pair_prompt_library,,Gemma3,SERIAL,DISRUPT,BASE,BASE,48,38,0.7916666666666666,48,0,0,116
+six_pair_prompt_library,,Gemma3,SERIAL,DISRUPT,NEUTRAL,NEUTRAL,288,183,0.6354166666666666,288,0,0,647
+six_pair_prompt_library,,Gemma3,SERIAL,DISRUPT,PROCEDURAL,PROCEDURAL,288,203,0.7048611111111112,288,0,0,671
+six_pair_prompt_library,,Qwen3,PARALLEL,CLEAN,BASE,BASE,48,47,0.9791666666666666,48,0,1,96
+six_pair_prompt_library,,Qwen3,PARALLEL,CLEAN,NEUTRAL,NEUTRAL,288,283,0.9826388888888888,288,0,6,580
+six_pair_prompt_library,,Qwen3,PARALLEL,CLEAN,PROCEDURAL,PROCEDURAL,288,286,0.9930555555555556,288,0,7,577
+six_pair_prompt_library,,Qwen3,PARALLEL,DISRUPT,BASE,BASE,48,34,0.7083333333333334,48,0,1,119
+six_pair_prompt_library,,Qwen3,PARALLEL,DISRUPT,NEUTRAL,NEUTRAL,288,216,0.75,288,0,6,731
+six_pair_prompt_library,,Qwen3,PARALLEL,DISRUPT,PROCEDURAL,PROCEDURAL,288,203,0.7048611111111112,288,0,7,694
+six_pair_prompt_library,,Qwen3,SERIAL,CLEAN,BASE,BASE,48,48,1.0,48,0,0,100
+six_pair_prompt_library,,Qwen3,SERIAL,CLEAN,NEUTRAL,NEUTRAL,288,288,1.0,288,0,0,600
+six_pair_prompt_library,,Qwen3,SERIAL,CLEAN,PROCEDURAL,PROCEDURAL,288,288,1.0,288,0,0,596
+six_pair_prompt_library,,Qwen3,SERIAL,DISRUPT,BASE,BASE,48,39,0.8125,48,0,0,130
+six_pair_prompt_library,,Qwen3,SERIAL,DISRUPT,NEUTRAL,NEUTRAL,288,256,0.8888888888888888,288,0,0,827
+six_pair_prompt_library,,Qwen3,SERIAL,DISRUPT,PROCEDURAL,PROCEDURAL,288,223,0.7743055555555556,288,0,0,773
+source_information_intervention,,Ministral,SINGLE_ACTION_JSON,CLEAN,,BASE,48,24,0.5,47,42,1,229
+source_information_intervention,,Ministral,SINGLE_ACTION_JSON,CLEAN,,CORRECT_SOURCE_ID,48,32,0.6666666666666666,47,15,1,138
+source_information_intervention,,Ministral,SINGLE_ACTION_JSON,CLEAN,,LOCALIZATION_PLACEBO,48,4,0.08333333333333333,16,303,32,126
+source_information_intervention,,Ministral,SINGLE_ACTION_JSON,CLEAN,,REPLAY,48,34,0.7083333333333334,48,0,0,0
+source_information_intervention,,Ministral,SINGLE_ACTION_JSON,CLEAN,,WRONG_SOURCE_ID,48,1,0.020833333333333332,48,38,0,146
+source_information_intervention,,Ministral,SINGLE_ACTION_JSON,DISRUPT,,BASE,48,17,0.3541666666666667,38,41,10,214
+source_information_intervention,,Ministral,SINGLE_ACTION_JSON,DISRUPT,,CORRECT_SOURCE_ID,48,31,0.6458333333333334,46,15,2,138
+source_information_intervention,,Ministral,SINGLE_ACTION_JSON,DISRUPT,,LOCALIZATION_PLACEBO,48,4,0.08333333333333333,13,264,35,108
+source_information_intervention,,Ministral,SINGLE_ACTION_JSON,DISRUPT,,REPLAY,48,34,0.7083333333333334,48,0,0,0
+source_information_intervention,,Ministral,SINGLE_ACTION_JSON,DISRUPT,,WRONG_SOURCE_ID,48,1,0.020833333333333332,44,38,4,141
+source_information_intervention,,Qwen3,NATIVE_TOOL_CALL,CLEAN,,BASE,48,34,0.7083333333333334,48,0,0,371
+source_information_intervention,,Qwen3,NATIVE_TOOL_CALL,CLEAN,,CORRECT_SOURCE_ID,48,37,0.7708333333333334,48,0,0,144
+source_information_intervention,,Qwen3,NATIVE_TOOL_CALL,CLEAN,,LOCALIZATION_PLACEBO,48,35,0.7291666666666666,48,0,0,384
+source_information_intervention,,Qwen3,NATIVE_TOOL_CALL,CLEAN,,REPLAY,48,34,0.7083333333333334,48,0,0,0
+source_information_intervention,,Qwen3,NATIVE_TOOL_CALL,CLEAN,,WRONG_SOURCE_ID,48,0,0.0,48,0,0,147
+source_information_intervention,,Qwen3,NATIVE_TOOL_CALL,DISRUPT,,BASE,48,32,0.6666666666666666,48,0,0,372
+source_information_intervention,,Qwen3,NATIVE_TOOL_CALL,DISRUPT,,CORRECT_SOURCE_ID,48,37,0.7708333333333334,48,0,0,144
+source_information_intervention,,Qwen3,NATIVE_TOOL_CALL,DISRUPT,,LOCALIZATION_PLACEBO,48,33,0.6875,48,0,0,384
+source_information_intervention,,Qwen3,NATIVE_TOOL_CALL,DISRUPT,,REPLAY,48,35,0.7291666666666666,48,0,0,0
+source_information_intervention,,Qwen3,NATIVE_TOOL_CALL,DISRUPT,,WRONG_SOURCE_ID,48,0,0.0,48,0,0,147
+strict_json_boundary,,InternLM2.5,SERIAL,CLEAN,,BASE,48,45,0.9375,46,0,18,106
+strict_json_boundary,,InternLM2.5,SERIAL,CLEAN,,PLACEBO,48,0,0.0,0,384,0,0
+strict_json_boundary,,InternLM2.5,SERIAL,DISRUPT,,BASE,48,38,0.7916666666666666,46,0,19,142
+strict_json_boundary,,InternLM2.5,SERIAL,DISRUPT,,PLACEBO,48,0,0.0,0,384,0,0
+strict_json_boundary,,Qwen3,SERIAL,CLEAN,,BASE,48,48,1.0,48,0,0,102
+strict_json_boundary,,Qwen3,SERIAL,CLEAN,,PLACEBO,48,48,1.0,48,0,0,102
+strict_json_boundary,,Qwen3,SERIAL,DISRUPT,,BASE,48,47,0.9791666666666666,48,0,0,137
+strict_json_boundary,,Qwen3,SERIAL,DISRUPT,,PLACEBO,48,46,0.9583333333333334,48,0,0,139

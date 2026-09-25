@@ -1,0 +1,55 @@
+{
+  "task_id": "SMOKE-CONFIG-001",
+  "task_type": "CONFIGURATION_INFERENCE",
+  "question": "Return the root configuration path and its exact SHA-256 digest.",
+  "answer_schema": {
+    "config_path": "string",
+    "config_sha256": "string"
+  },
+  "gold": {
+    "config_path": "build/runner.yml",
+    "config_sha256": "0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
+  },
+  "aliases": {
+    "config_path": {
+      "./build/runner.yml": "build/runner.yml"
+    }
+  },
+  "source_ids": ["SRC_A1C3", "SRC_B2D4", "SRC_C3E5", "SRC_D4F6"],
+  "source_descriptions": {
+    "SRC_A1C3": "primary configuration summary",
+    "SRC_B2D4": "decoy documentation note",
+    "SRC_C3E5": "recovery index",
+    "SRC_D4F6": "unrelated project metadata"
+  },
+  "contents": {
+    "CLEAN": {
+      "SRC_A1C3": "Root configuration: build/runner.yml. SHA-256: 0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef.",
+      "SRC_B2D4": "Example path in documentation: docs/example.yml. Digest: ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff.",
+      "SRC_C3E5": "Recovery index: build/runner.yml has digest 0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef.",
+      "SRC_D4F6": "Project metadata: runtime version 1.0."
+    },
+    "PRESERVE": {
+      "SRC_A1C3": "Root configuration: build/runner.yml. SHA-256: 0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef.",
+      "SRC_B2D4": "Example path in documentation: docs/example.yml. Digest: ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff.",
+      "SRC_C3E5": "Recovery index: build/runner.yml has digest 0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef.",
+      "SRC_D4F6": "Project metadata: runtime version 1.0."
+    },
+    "DISRUPT": {
+      "SRC_A1C3": "Primary index temporarily reports the wrong digest: ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff.",
+      "SRC_B2D4": "Example path in documentation: docs/example.yml. Digest: ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff.",
+      "SRC_C3E5": "Recovery index: build/runner.yml has digest 0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef.",
+      "SRC_D4F6": "Project metadata: runtime version 1.0."
+    }
+  },
+  "tool_failures": {
+    "DISRUPT": {
+      "SRC_A1C3": {
+        "failures": 1,
+        "message": "Read timeout; retry or inspect another declared source."
+      }
+    }
+  },
+  "max_steps": 8,
+  "protocol": "e04"
+}

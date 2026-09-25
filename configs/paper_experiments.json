@@ -1,0 +1,751 @@
+{
+  "evaluations": [
+    {
+      "arms": [
+        "CLEAN",
+        "PRESERVE",
+        "DISRUPT"
+      ],
+      "conditions": [
+        "CLEAN",
+        "PRESERVE",
+        "DISRUPT"
+      ],
+      "data_experiment": "authentic_repository_evaluation",
+      "evaluation_id": "authentic_repository_evaluation",
+      "generation": {
+        "max_tokens_per_turn": null,
+        "request_seed": null,
+        "temperature": null,
+        "top_p": null
+      },
+      "interfaces": [
+        "NATIVE_TOOL_CALL"
+      ],
+      "max_steps": null,
+      "model_settings": [
+        {
+          "checkpoint_id": null,
+          "checkpoint_status": "unavailable",
+          "label": "Qwen3",
+          "revision": null
+        }
+      ],
+      "parser_protocol": null,
+      "prompt_reference": null,
+      "runtime": {
+        "checkpoint_or_server_configuration": "unavailable"
+      }
+    },
+    {
+      "arms": [
+        "BASE",
+        "LOCALIZATION_PLACEBO",
+        "CORRECT_SOURCE_ID",
+        "WRONG_SOURCE_ID",
+        "REPLAY"
+      ],
+      "conditions": [
+        "CLEAN",
+        "DISRUPT"
+      ],
+      "data_experiment": "source_information_intervention",
+      "evaluation_id": "source_information_intervention",
+      "generation": {
+        "max_tokens_per_turn": null,
+        "request_seed": null,
+        "temperature": null,
+        "top_p": null
+      },
+      "interfaces": [
+        "NATIVE_TOOL_CALL",
+        "SINGLE_ACTION_JSON"
+      ],
+      "max_steps": null,
+      "model_settings": [
+        {
+          "checkpoint_id": "Qwen/Qwen3-14B-AWQ",
+          "checkpoint_status": "verified",
+          "label": "Qwen3",
+          "revision": "505404f7493a0dd80e6e3c52bf18f66710df710f"
+        },
+        {
+          "checkpoint_id": "mistralai/Ministral-3-8B-Instruct-2512-BF16",
+          "checkpoint_status": "verified",
+          "label": "Ministral",
+          "revision": "f6fae9795746f63c9be8344932f01275f3c63734"
+        }
+      ],
+      "parser_protocol": {
+        "Ministral": "JSON-action controller",
+        "Qwen3": "native vLLM/Hermes tool interface"
+      },
+      "prompt_reference": {
+        "complete_rendering": "unavailable"
+      },
+      "runtime": {
+        "decoding_and_step_limit": "unavailable in the verified frozen summary"
+      }
+    },
+    {
+      "arms": [
+        "BASE",
+        "PLACEBO"
+      ],
+      "conditions": [
+        "CLEAN",
+        "DISRUPT"
+      ],
+      "data_experiment": "model_interface_comparisons",
+      "evaluation_id": "model_interface_evaluations",
+      "generation": {
+        "max_tokens_per_turn": null,
+        "request_seed": null,
+        "temperature": null,
+        "top_p": null
+      },
+      "interfaces": [
+        "SERIAL",
+        "PARALLEL"
+      ],
+      "max_steps": null,
+      "model_settings": [
+        {
+          "checkpoint_id": null,
+          "checkpoint_status": "unavailable",
+          "label": "Falcon3",
+          "revision": null
+        },
+        {
+          "checkpoint_id": null,
+          "checkpoint_status": "unavailable",
+          "label": "Gemma3",
+          "revision": null
+        },
+        {
+          "checkpoint_id": null,
+          "checkpoint_status": "unavailable",
+          "label": "Granite",
+          "revision": null
+        },
+        {
+          "checkpoint_id": null,
+          "checkpoint_status": "unavailable",
+          "label": "InternLM2.5",
+          "revision": null
+        },
+        {
+          "checkpoint_id": null,
+          "checkpoint_status": "unavailable",
+          "label": "Llama-Hermes",
+          "revision": null
+        },
+        {
+          "checkpoint_id": null,
+          "checkpoint_status": "unavailable",
+          "label": "Qwen3",
+          "revision": null
+        },
+        {
+          "checkpoint_id": null,
+          "checkpoint_status": "unavailable",
+          "label": "Yi-1.5",
+          "revision": null
+        }
+      ],
+      "parser_protocol": null,
+      "prompt_reference": null,
+      "runtime": {
+        "checkpoint_or_server_configuration": "unavailable"
+      }
+    },
+    {
+      "arms": [
+        "BASE",
+        "PLACEBO"
+      ],
+      "data_experiment": "required_source_intervention",
+      "evaluation_id": "required_source_intervention",
+      "generation": {
+        "max_tokens_per_turn": 220,
+        "request_seed": 0,
+        "temperature": 0.0,
+        "top_p": 1.0
+      },
+      "interfaces": [
+        "SERIAL",
+        "PARALLEL"
+      ],
+      "max_steps": 8,
+      "model_settings": [
+        {
+          "checkpoint_id": "01-ai/Yi-1.5-9B-Chat",
+          "checkpoint_status": "verified",
+          "dtype": "half",
+          "enable_thinking": null,
+          "label": "Yi-1.5",
+          "max_model_len": 4096,
+          "revision": "1a0fc698cf883c4f5c325f026ca79f0ebd9955a5"
+        },
+        {
+          "checkpoint_id": "internlm/internlm2_5-7b-chat",
+          "checkpoint_status": "verified",
+          "dtype": "half",
+          "enable_thinking": null,
+          "label": "InternLM2.5",
+          "max_model_len": 8192,
+          "revision": "eb72b541689b0432dade0435feb339b89fdd39ff"
+        },
+        {
+          "checkpoint_id": "google/gemma-3-12b-it",
+          "checkpoint_status": "verified",
+          "dtype": "bfloat16",
+          "enable_thinking": null,
+          "label": "Gemma3",
+          "max_model_len": 8192,
+          "revision": "96b6f1eccf38110c56df3a15bffe176da04bfd80"
+        },
+        {
+          "checkpoint_id": "Qwen/Qwen3-8B",
+          "checkpoint_status": "verified",
+          "dtype": "half",
+          "enable_thinking": null,
+          "label": "Qwen3",
+          "max_model_len": 8192,
+          "revision": "b968826d9c46dd6066d109eabc6255188de91218"
+        }
+      ],
+      "parser_protocol": "One JSON action per turn; SERIAL permits exactly one source ID per read; PARALLEL permits one or more; failed attempts remain in denominator.",
+      "prompt_reference": {
+        "complete_task_prompts_available": false,
+        "fragment_id": "S_PLACEBO_LOCALIZATION_STEP",
+        "manifest": "data/prompt_manifest.json"
+      },
+      "runtime": {
+        "backend_version": "unavailable in the frozen summary"
+      },
+      "source_availability_regimes": [
+        "NATURAL",
+        "SHAM_PRELOAD",
+        "RECOVERY_PRELOAD",
+        "RECOVERY_BLOCKED_ALT"
+      ]
+    },
+    {
+      "arms": [
+        "BASE",
+        "NEUTRAL",
+        "PROCEDURAL"
+      ],
+      "conditions": [
+        "CLEAN",
+        "DISRUPT"
+      ],
+      "data_experiment": "same_run_prompt_comparison",
+      "evaluation_id": "same_run_prompt_comparison",
+      "generation": {
+        "max_tokens_per_turn": 220,
+        "request_seed": 0,
+        "temperature": 0.0,
+        "top_p": 1.0
+      },
+      "interfaces": [
+        "SERIAL",
+        "PARALLEL"
+      ],
+      "max_steps": 8,
+      "model_settings": [
+        {
+          "checkpoint_id": "google/gemma-3-12b-it",
+          "checkpoint_status": "verified",
+          "dtype": "bfloat16",
+          "enable_thinking": false,
+          "label": "Gemma3",
+          "max_model_len": 8192,
+          "revision": "96b6f1eccf38110c56df3a15bffe176da04bfd80"
+        },
+        {
+          "checkpoint_id": "Qwen/Qwen3-8B",
+          "checkpoint_status": "verified",
+          "dtype": "bfloat16",
+          "enable_thinking": false,
+          "label": "Qwen3",
+          "max_model_len": 8192,
+          "revision": "b968826d9c46dd6066d109eabc6255188de91218"
+        }
+      ],
+      "parser_protocol": "CAB_E01_CONTEMPORANEOUS_BNP_BRIDGE_V1",
+      "prompt_reference": {
+        "evaluation": "E01",
+        "manifest": "data/prompt_manifest.json"
+      },
+      "runtime": {
+        "dtype": "bfloat16",
+        "hardware": "NVIDIA A100-SXM4-40GB required",
+        "max_model_len": 8192,
+        "python": "3.12.x",
+        "qwen_enable_thinking": false,
+        "vllm": "0.27.1+cu129"
+      }
+    },
+    {
+      "arms": [
+        "BASE",
+        "N_LONG_1",
+        "N_LONG_2",
+        "N_MEDIUM_1",
+        "N_MEDIUM_2",
+        "N_SHORT_1",
+        "N_SHORT_2",
+        "P_LONG_1",
+        "P_LONG_2",
+        "P_MEDIUM_1",
+        "P_MEDIUM_2",
+        "P_SHORT_1",
+        "P_SHORT_2"
+      ],
+      "conditions": [
+        "CLEAN",
+        "DISRUPT"
+      ],
+      "data_experiment": "six_pair_prompt_library",
+      "evaluation_id": "six_pair_prompt_library",
+      "generation": {
+        "max_tokens_per_turn": 220,
+        "request_seed": 0,
+        "temperature": 0.0,
+        "top_p": 1.0
+      },
+      "interfaces": [
+        "SERIAL",
+        "PARALLEL"
+      ],
+      "max_steps": 8,
+      "model_settings": [
+        {
+          "checkpoint_id": "google/gemma-3-12b-it",
+          "checkpoint_status": "verified",
+          "dtype": "bfloat16",
+          "enable_thinking": false,
+          "label": "Gemma3",
+          "max_model_len": 8192,
+          "revision": "96b6f1eccf38110c56df3a15bffe176da04bfd80"
+        },
+        {
+          "checkpoint_id": "Qwen/Qwen3-8B",
+          "checkpoint_status": "verified",
+          "dtype": "bfloat16",
+          "enable_thinking": false,
+          "label": "Qwen3",
+          "max_model_len": 8192,
+          "revision": "b968826d9c46dd6066d109eabc6255188de91218"
+        }
+      ],
+      "parser_protocol": "CAB_E05_CONTENT_LENGTH_PARAPHRASE_FACTORIAL_V1",
+      "prompt_pairs": [
+        {
+          "budget": "SHORT",
+          "evaluation": "E05",
+          "neutral_arm": "N_SHORT_1",
+          "neutral_token_counts": {
+            "Gemma3": 10,
+            "Qwen3": 10
+          },
+          "nominal_word_count": 8,
+          "procedural_arm": "P_SHORT_1",
+          "procedural_token_counts": {
+            "Gemma3": 10,
+            "Qwen3": 10
+          },
+          "prompt_pair_id": "S1"
+        },
+        {
+          "budget": "SHORT",
+          "evaluation": "E05",
+          "neutral_arm": "N_SHORT_2",
+          "neutral_token_counts": {
+            "Gemma3": 10,
+            "Qwen3": 10
+          },
+          "nominal_word_count": 8,
+          "procedural_arm": "P_SHORT_2",
+          "procedural_token_counts": {
+            "Gemma3": 10,
+            "Qwen3": 10
+          },
+          "prompt_pair_id": "S2"
+        },
+        {
+          "budget": "MEDIUM",
+          "evaluation": "E05",
+          "neutral_arm": "N_MEDIUM_1",
+          "neutral_token_counts": {
+            "Gemma3": 18,
+            "Qwen3": 18
+          },
+          "nominal_word_count": 15,
+          "procedural_arm": "P_MEDIUM_1",
+          "procedural_token_counts": {
+            "Gemma3": 17,
+            "Qwen3": 17
+          },
+          "prompt_pair_id": "M1"
+        },
+        {
+          "budget": "MEDIUM",
+          "evaluation": "E05",
+          "neutral_arm": "N_MEDIUM_2",
+          "neutral_token_counts": {
+            "Gemma3": 17,
+            "Qwen3": 17
+          },
+          "nominal_word_count": 15,
+          "procedural_arm": "P_MEDIUM_2",
+          "procedural_token_counts": {
+            "Gemma3": 17,
+            "Qwen3": 17
+          },
+          "prompt_pair_id": "M3"
+        },
+        {
+          "budget": "LONG",
+          "evaluation": "E05",
+          "neutral_arm": "N_LONG_1",
+          "neutral_token_counts": {
+            "Gemma3": 28,
+            "Qwen3": 28
+          },
+          "nominal_word_count": 24,
+          "procedural_arm": "P_LONG_1",
+          "procedural_token_counts": {
+            "Gemma3": 29,
+            "Qwen3": 29
+          },
+          "prompt_pair_id": "L1"
+        },
+        {
+          "budget": "LONG",
+          "evaluation": "E05",
+          "neutral_arm": "N_LONG_2",
+          "neutral_token_counts": {
+            "Gemma3": 28,
+            "Qwen3": 28
+          },
+          "nominal_word_count": 24,
+          "procedural_arm": "P_LONG_2",
+          "procedural_token_counts": {
+            "Gemma3": 29,
+            "Qwen3": 29
+          },
+          "prompt_pair_id": "L2"
+        }
+      ],
+      "prompt_reference": {
+        "evaluation": "E05",
+        "manifest": "data/prompt_manifest.json"
+      },
+      "runtime": {
+        "dtype": "bfloat16",
+        "hardware": "NVIDIA A100-SXM4-40GB required",
+        "max_model_len": 8192,
+        "python": "3.12.x",
+        "qwen_enable_thinking": false,
+        "vllm": "0.27.1+cu129"
+      }
+    },
+    {
+      "arms": [
+        "BASE",
+        "N_LONG",
+        "N_MEDIUM",
+        "N_SHORT",
+        "P_LONG",
+        "P_MEDIUM",
+        "P_SHORT"
+      ],
+      "conditions": [
+        "CLEAN",
+        "DISRUPT"
+      ],
+      "data_experiment": "large_repository_matched_prompts",
+      "evaluation_id": "large_repository_evaluation",
+      "generation": {
+        "max_tokens_per_turn": null,
+        "request_seed": null,
+        "temperature": null,
+        "top_p": null
+      },
+      "interfaces": [
+        "SERIAL",
+        "PARALLEL"
+      ],
+      "max_steps": 8,
+      "model_settings": [
+        {
+          "checkpoint_id": "google/gemma-3-12b-it",
+          "checkpoint_status": "verified",
+          "dtype": "bfloat16",
+          "enable_thinking": null,
+          "label": "Gemma3",
+          "max_model_len": 8192,
+          "revision": "96b6f1eccf38110c56df3a15bffe176da04bfd80"
+        },
+        {
+          "checkpoint_id": "internlm/internlm2_5-7b-chat",
+          "checkpoint_status": "verified",
+          "dtype": "bfloat16",
+          "enable_thinking": null,
+          "label": "InternLM2.5",
+          "max_model_len": 8192,
+          "revision": "eb72b541689b0432dade0435feb339b89fdd39ff"
+        },
+        {
+          "checkpoint_id": "Qwen/Qwen3-8B",
+          "checkpoint_status": "verified",
+          "dtype": "bfloat16",
+          "enable_thinking": false,
+          "label": "Qwen3",
+          "max_model_len": 8192,
+          "revision": "b968826d9c46dd6066d109eabc6255188de91218"
+        }
+      ],
+      "parser_protocol": "JSON action per turn; SERIAL reads exactly one source; PARALLEL reads one or more.",
+      "prompt_pairs": [
+        "SHORT",
+        "MEDIUM",
+        "LONG"
+      ],
+      "prompt_reference": {
+        "evaluation": "E04",
+        "manifest": "data/prompt_manifest.json"
+      },
+      "runtime": {
+        "architecture": "four independent single-GPU vLLM servers",
+        "cuda_userspace": "12.9",
+        "python": "3.12.x",
+        "torch": "2.13.0+cu129",
+        "vllm": "0.27.1+cu129"
+      }
+    },
+    {
+      "arms": [
+        "BASE",
+        "PLACEBO"
+      ],
+      "conditions": [
+        "CLEAN",
+        "DISRUPT"
+      ],
+      "data_experiment": "strict_json_boundary",
+      "evaluation_id": "strict_json_boundary",
+      "generation": {
+        "max_tokens_per_turn": null,
+        "request_seed": null,
+        "temperature": null,
+        "top_p": null
+      },
+      "interfaces": [
+        "SERIAL"
+      ],
+      "max_steps": null,
+      "model_settings": [
+        {
+          "checkpoint_id": null,
+          "checkpoint_status": "unavailable",
+          "label": "InternLM2.5",
+          "revision": null
+        },
+        {
+          "checkpoint_id": null,
+          "checkpoint_status": "unavailable",
+          "label": "Qwen3",
+          "revision": null
+        }
+      ],
+      "parser_protocol": "Strict json.loads on the full stripped response; no markdown-fence stripping, extraction, or repair.",
+      "prompt_reference": null,
+      "runtime": {
+        "checkpoint_or_server_configuration": "unavailable"
+      }
+    },
+    {
+      "arms": [
+        "BASE",
+        "PLACEBO"
+      ],
+      "artifact_types": [
+        "GITHUB_ACTIONS",
+        "DEPLOYMENT_YAML",
+        "DOCKERFILE",
+        "TOX_INI",
+        "LOCKFILE",
+        "PRECOMMIT_YAML"
+      ],
+      "conditions": [
+        "CLEAN",
+        "DISRUPT"
+      ],
+      "data_experiment": "file_format_boundary",
+      "evaluation_id": "file_format_boundary",
+      "generation": {
+        "max_tokens_per_turn": null,
+        "request_seed": null,
+        "temperature": null,
+        "top_p": null
+      },
+      "interfaces": [
+        "SERIAL",
+        "PARALLEL"
+      ],
+      "max_steps": null,
+      "model_settings": [
+        {
+          "checkpoint_id": null,
+          "checkpoint_status": "unavailable",
+          "label": "Gemma3",
+          "revision": null
+        },
+        {
+          "checkpoint_id": null,
+          "checkpoint_status": "unavailable",
+          "label": "InternLM2.5",
+          "revision": null
+        },
+        {
+          "checkpoint_id": null,
+          "checkpoint_status": "unavailable",
+          "label": "Qwen3",
+          "revision": null
+        }
+      ],
+      "parser_protocol": null,
+      "prompt_reference": null,
+      "runtime": {
+        "checkpoint_or_server_configuration": "unavailable"
+      }
+    },
+    {
+      "arms": [
+        "CLOSED_BOOK"
+      ],
+      "conditions": [],
+      "data_experiment": "closed_book_no_tools",
+      "evaluation_id": "closed_book_no_tools",
+      "generation": {
+        "max_tokens_per_turn": null,
+        "request_seed": null,
+        "temperature": null,
+        "top_p": null
+      },
+      "interfaces": [
+        "NO_TOOLS"
+      ],
+      "max_steps": null,
+      "model_settings": [
+        {
+          "checkpoint_id": null,
+          "checkpoint_status": "unavailable",
+          "label": "Gemma3",
+          "revision": null
+        },
+        {
+          "checkpoint_id": null,
+          "checkpoint_status": "unavailable",
+          "label": "InternLM2.5",
+          "revision": null
+        },
+        {
+          "checkpoint_id": null,
+          "checkpoint_status": "unavailable",
+          "label": "Qwen3",
+          "revision": null
+        },
+        {
+          "checkpoint_id": null,
+          "checkpoint_status": "unavailable",
+          "label": "Yi-1.5",
+          "revision": null
+        }
+      ],
+      "parser_protocol": null,
+      "prompt_reference": null,
+      "runtime": {
+        "checkpoint_or_server_configuration": "unavailable"
+      }
+    },
+    {
+      "arms": [
+        "N_SHORT",
+        "P_SHORT",
+        "N_MEDIUM",
+        "P_MEDIUM",
+        "N_LONG",
+        "P_LONG"
+      ],
+      "conditions": [
+        "CLEAN",
+        "DISRUPT"
+      ],
+      "data_experiment": "repeated_server_sessions",
+      "evaluation_id": "repeated_server_sessions",
+      "generation": {
+        "max_tokens_per_turn": null,
+        "request_seed": null,
+        "temperature": null,
+        "top_p": null
+      },
+      "interfaces": [
+        "SERIAL",
+        "PARALLEL"
+      ],
+      "max_steps": null,
+      "model_settings": [
+        {
+          "checkpoint_id": null,
+          "checkpoint_status": "unavailable",
+          "label": "Gemma3",
+          "revision": null
+        },
+        {
+          "checkpoint_id": null,
+          "checkpoint_status": "unavailable",
+          "label": "Qwen3",
+          "revision": null
+        }
+      ],
+      "parser_protocol": null,
+      "prompt_reference": null,
+      "request_repetitions_per_setting": 3,
+      "request_seed_rule": "Request seeds are recorded row by row in data/results.csv.",
+      "runtime": {
+        "checkpoint_or_server_configuration": "unavailable"
+      },
+      "selected_settings": [
+        {
+          "budget": "SHORT",
+          "condition": "DISRUPT",
+          "interface": "SERIAL",
+          "model": "Qwen3"
+        },
+        {
+          "budget": "LONG",
+          "condition": "CLEAN",
+          "interface": "PARALLEL",
+          "model": "Gemma3"
+        },
+        {
+          "budget": "MEDIUM",
+          "condition": "CLEAN",
+          "interface": "PARALLEL",
+          "model": "Qwen3"
+        }
+      ],
+      "server_sessions": 4
+    }
+  ],
+  "incomplete_experiment_statuses": "data/additional_checks.csv",
+  "prompt_manifest": "data/prompt_manifest.json",
+  "prompt_coverage": "configs/prompt_coverage.json",
+  "schema_version": "cab-paper-experiments-v1",
+  "values_note": "Only values present in verified registrations, freezes, or released outcome metadata are included; null fields mean unavailable."
+}

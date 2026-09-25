@@ -1,0 +1,683 @@
+{
+  "checks": [
+    {
+      "expected": {
+        "CLEAN": 27,
+        "DISRUPT": 14,
+        "PRESERVE": 26
+      },
+      "name": "authentic counts",
+      "observed": {
+        "CLEAN": 27,
+        "DISRUPT": 14,
+        "PRESERVE": 26
+      },
+      "status": "PASS"
+    },
+    {
+      "expected": {
+        "bootstrap_ci_pp": [
+          25.0,
+          56.25
+        ],
+        "clean_only": 13,
+        "disrupt_only": 0,
+        "effect_pp": 40.625,
+        "exact_p": 0.000244140625,
+        "n": 32
+      },
+      "name": "authentic paired analysis",
+      "observed": {
+        "a_only": 13,
+        "b_only": 0,
+        "bootstrap_ci_pp": [
+          25.0,
+          56.25
+        ],
+        "effect_pp": 40.625,
+        "exact_p": 0.000244140625,
+        "loo_range_pp": [
+          35.714285714285715,
+          46.42857142857143
+        ],
+        "n": 32
+      },
+      "status": "PASS"
+    },
+    {
+      "expected": {
+        "Ministral": {
+          "CLEAN": {
+            "BASE": 24,
+            "CORRECT_SOURCE_ID": 32,
+            "LOCALIZATION_PLACEBO": 4,
+            "REPLAY": 34,
+            "WRONG_SOURCE_ID": 1
+          },
+          "DISRUPT": {
+            "BASE": 17,
+            "CORRECT_SOURCE_ID": 31,
+            "LOCALIZATION_PLACEBO": 4,
+            "REPLAY": 34,
+            "WRONG_SOURCE_ID": 1
+          }
+        },
+        "Qwen3": {
+          "CLEAN": {
+            "BASE": 34,
+            "CORRECT_SOURCE_ID": 37,
+            "LOCALIZATION_PLACEBO": 35,
+            "REPLAY": 34,
+            "WRONG_SOURCE_ID": 0
+          },
+          "DISRUPT": {
+            "BASE": 32,
+            "CORRECT_SOURCE_ID": 37,
+            "LOCALIZATION_PLACEBO": 33,
+            "REPLAY": 35,
+            "WRONG_SOURCE_ID": 0
+          }
+        }
+      },
+      "name": "source-information arm counts",
+      "observed": {
+        "Ministral": {
+          "CLEAN": {
+            "BASE": 24,
+            "CORRECT_SOURCE_ID": 32,
+            "LOCALIZATION_PLACEBO": 4,
+            "REPLAY": 34,
+            "WRONG_SOURCE_ID": 1
+          },
+          "DISRUPT": {
+            "BASE": 17,
+            "CORRECT_SOURCE_ID": 31,
+            "LOCALIZATION_PLACEBO": 4,
+            "REPLAY": 34,
+            "WRONG_SOURCE_ID": 1
+          }
+        },
+        "Qwen3": {
+          "CLEAN": {
+            "BASE": 34,
+            "CORRECT_SOURCE_ID": 37,
+            "LOCALIZATION_PLACEBO": 35,
+            "REPLAY": 34,
+            "WRONG_SOURCE_ID": 0
+          },
+          "DISRUPT": {
+            "BASE": 32,
+            "CORRECT_SOURCE_ID": 37,
+            "LOCALIZATION_PLACEBO": 33,
+            "REPLAY": 35,
+            "WRONG_SOURCE_ID": 0
+          }
+        }
+      },
+      "status": "PASS"
+    },
+    {
+      "expected": {
+        "('Set 1', 'Granite', 'SERIAL', 'DISRUPT', 'BASE')": 12,
+        "('Set 1', 'Granite', 'SERIAL', 'DISRUPT', 'PLACEBO')": 29,
+        "('Set 2', 'Gemma3', 'SERIAL', 'DISRUPT', 'BASE')": 31,
+        "('Set 2', 'Gemma3', 'SERIAL', 'DISRUPT', 'PLACEBO')": 11,
+        "('Set 3', 'Gemma3', 'PARALLEL', 'DISRUPT', 'BASE')": 45,
+        "('Set 3', 'Gemma3', 'PARALLEL', 'DISRUPT', 'PLACEBO')": 29
+      },
+      "name": "model-interface comparison examples",
+      "observed": {
+        "('Set 1', 'Granite', 'SERIAL', 'DISRUPT', 'BASE')": 12,
+        "('Set 1', 'Granite', 'SERIAL', 'DISRUPT', 'PLACEBO')": 29,
+        "('Set 2', 'Gemma3', 'SERIAL', 'DISRUPT', 'BASE')": 31,
+        "('Set 2', 'Gemma3', 'SERIAL', 'DISRUPT', 'PLACEBO')": 11,
+        "('Set 3', 'Gemma3', 'PARALLEL', 'DISRUPT', 'BASE')": 45,
+        "('Set 3', 'Gemma3', 'PARALLEL', 'DISRUPT', 'PLACEBO')": 29
+      },
+      "status": "PASS"
+    },
+    {
+      "expected": {
+        "('NATURAL', 'BASE')": 13,
+        "('NATURAL', 'PLACEBO')": 4,
+        "('RECOVERY_PRELOAD', 'BASE')": 24,
+        "('RECOVERY_PRELOAD', 'PLACEBO')": 24,
+        "('SHAM_PRELOAD', 'BASE')": 17,
+        "('SHAM_PRELOAD', 'PLACEBO')": 5
+      },
+      "name": "required-source key setting",
+      "observed": {
+        "('NATURAL', 'BASE')": 13,
+        "('NATURAL', 'PLACEBO')": 4,
+        "('RECOVERY_PRELOAD', 'BASE')": 24,
+        "('RECOVERY_PRELOAD', 'PLACEBO')": 24,
+        "('SHAM_PRELOAD', 'BASE')": 17,
+        "('SHAM_PRELOAD', 'PLACEBO')": 5
+      },
+      "status": "PASS"
+    },
+    {
+      "expected": {
+        "same_run": 1152,
+        "six_pair": 4992
+      },
+      "name": "matched-prompt row totals",
+      "observed": {
+        "same_run": 1152,
+        "six_pair": 4992
+      },
+      "status": "PASS"
+    },
+    {
+      "expected": {
+        "E01_parser_rejections": 0,
+        "E01_valid": 1152,
+        "E05_parser_rejections": 0,
+        "E05_valid": 4992
+      },
+      "name": "matched-prompt validity",
+      "observed": {
+        "E01_parser_rejections": 0,
+        "E01_valid": 1152,
+        "E05_parser_rejections": 0,
+        "E05_valid": 4992
+      },
+      "status": "PASS"
+    },
+    {
+      "expected": {
+        "Gemma3|PARALLEL|CLEAN": [
+          48,
+          48,
+          0.0,
+          1.0,
+          1.0
+        ],
+        "Gemma3|PARALLEL|DISRUPT": [
+          32,
+          37,
+          -10.416666666666666,
+          0.1796875,
+          0.8984375
+        ],
+        "Gemma3|SERIAL|CLEAN": [
+          43,
+          48,
+          -10.416666666666666,
+          0.0625,
+          0.4375
+        ],
+        "Gemma3|SERIAL|DISRUPT": [
+          32,
+          29,
+          6.25,
+          0.5810546875,
+          1.0
+        ],
+        "Qwen3|PARALLEL|CLEAN": [
+          47,
+          47,
+          0.0,
+          1.0,
+          1.0
+        ],
+        "Qwen3|PARALLEL|DISRUPT": [
+          34,
+          39,
+          -10.416666666666666,
+          0.125,
+          0.75
+        ],
+        "Qwen3|SERIAL|CLEAN": [
+          48,
+          48,
+          0.0,
+          1.0,
+          1.0
+        ],
+        "Qwen3|SERIAL|DISRUPT": [
+          36,
+          43,
+          -14.583333333333334,
+          0.015625,
+          0.125
+        ]
+      },
+      "name": "same-run primary contrasts and Holm family",
+      "observed": {
+        "Gemma3|PARALLEL|CLEAN": [
+          48,
+          48,
+          0.0,
+          1.0,
+          1.0
+        ],
+        "Gemma3|PARALLEL|DISRUPT": [
+          32,
+          37,
+          -10.416666666666666,
+          0.1796875,
+          0.8984375
+        ],
+        "Gemma3|SERIAL|CLEAN": [
+          43,
+          48,
+          -10.416666666666666,
+          0.0625,
+          0.4375
+        ],
+        "Gemma3|SERIAL|DISRUPT": [
+          32,
+          29,
+          6.25,
+          0.5810546875,
+          1.0
+        ],
+        "Qwen3|PARALLEL|CLEAN": [
+          47,
+          47,
+          0.0,
+          1.0,
+          1.0
+        ],
+        "Qwen3|PARALLEL|DISRUPT": [
+          34,
+          39,
+          -10.416666666666666,
+          0.125,
+          0.75
+        ],
+        "Qwen3|SERIAL|CLEAN": [
+          48,
+          48,
+          0.0,
+          1.0,
+          1.0
+        ],
+        "Qwen3|SERIAL|DISRUPT": [
+          36,
+          43,
+          -14.583333333333334,
+          0.015625,
+          0.125
+        ]
+      },
+      "status": "PASS"
+    },
+    {
+      "expected": {
+        "repositories": 180,
+        "rows": 30240,
+        "tasks": 360
+      },
+      "name": "180-repository design",
+      "observed": {
+        "repositories": 180,
+        "rows": 30240,
+        "tasks": 360
+      },
+      "status": "PASS"
+    },
+    {
+      "expected": {
+        "ACTION_INVALID_READ": 124,
+        "PARSER_JSON_DECODE": 2289
+      },
+      "name": "180-repository failure classification",
+      "observed": {
+        "ACTION_INVALID_READ": 124,
+        "PARSER_JSON_DECODE": 2289
+      },
+      "status": "PASS"
+    },
+    {
+      "expected": {
+        "correct": 3,
+        "rows": 192,
+        "tool_calls": 0
+      },
+      "name": "closed-book total",
+      "observed": {
+        "correct": 3,
+        "rows": 192,
+        "tool_calls": 0
+      },
+      "status": "PASS"
+    },
+    {
+      "expected": {
+        "DECOY_INJECTION": [
+          3,
+          96
+        ],
+        "TOOL_FAILURE": [
+          0,
+          96
+        ]
+      },
+      "name": "closed-book task-family outcomes",
+      "observed": {
+        "DECOY_INJECTION": [
+          3,
+          96
+        ],
+        "TOOL_FAILURE": [
+          0,
+          96
+        ]
+      },
+      "status": "PASS"
+    },
+    {
+      "expected": {
+        "InternLM2.5|SERIAL|CLEAN|BASE": 45,
+        "InternLM2.5|SERIAL|CLEAN|PLACEBO": 0,
+        "InternLM2.5|SERIAL|DISRUPT|BASE": 38,
+        "InternLM2.5|SERIAL|DISRUPT|PLACEBO": 0
+      },
+      "name": "strict JSON key outcomes",
+      "observed": {
+        "InternLM2.5|SERIAL|CLEAN|BASE": 45,
+        "InternLM2.5|SERIAL|CLEAN|PLACEBO": 0,
+        "InternLM2.5|SERIAL|DISRUPT|BASE": 38,
+        "InternLM2.5|SERIAL|DISRUPT|PLACEBO": 0
+      },
+      "status": "PASS"
+    },
+    {
+      "expected": 864,
+      "name": "repeated-session total",
+      "observed": 864,
+      "status": "PASS"
+    },
+    {
+      "expected": {
+        "('Gemma3', 'PARALLEL', 'CLEAN', 'N_LONG')": 0,
+        "('Gemma3', 'PARALLEL', 'CLEAN', 'P_LONG')": 5,
+        "('Qwen3', 'PARALLEL', 'CLEAN', 'N_MEDIUM')": 144,
+        "('Qwen3', 'PARALLEL', 'CLEAN', 'P_MEDIUM')": 144,
+        "('Qwen3', 'SERIAL', 'DISRUPT', 'N_SHORT')": 144,
+        "('Qwen3', 'SERIAL', 'DISRUPT', 'P_SHORT')": 144
+      },
+      "name": "repeated-session selected settings",
+      "observed": {
+        "('Gemma3', 'PARALLEL', 'CLEAN', 'N_LONG')": 0,
+        "('Gemma3', 'PARALLEL', 'CLEAN', 'P_LONG')": 5,
+        "('Qwen3', 'PARALLEL', 'CLEAN', 'N_MEDIUM')": 144,
+        "('Qwen3', 'PARALLEL', 'CLEAN', 'P_MEDIUM')": 144,
+        "('Qwen3', 'SERIAL', 'DISRUPT', 'N_SHORT')": 144,
+        "('Qwen3', 'SERIAL', 'DISRUPT', 'P_SHORT')": 144
+      },
+      "status": "PASS"
+    },
+    {
+      "expected": {
+        "effect_pp": -11.4583333333,
+        "n": 288,
+        "neutral": 256,
+        "procedural": 223,
+        "reported_mc_p": 6.999930000699993e-05
+      },
+      "name": "six-pair Qwen estimate",
+      "observed": {
+        "a_successes": 223,
+        "b_successes": 256,
+        "bootstrap_ci_pp": [
+          -16.319444444444446,
+          -6.944444444444444
+        ],
+        "effect_pp": -11.458333333333334,
+        "n": 288,
+        "recomputed_cluster_signflip_p": 5.999940000599994e-05,
+        "reported_mc_p": 6.999930000699993e-05
+      },
+      "status": "PASS"
+    },
+    {
+      "expected": {
+        "ci": [
+          -16.319444444444443,
+          -6.944444444444445
+        ],
+        "loo": [
+          -11.956521739130434,
+          -10.507246376811594
+        ]
+      },
+      "name": "six-pair cluster interval and leave-one-repository-out",
+      "observed": {
+        "ci": [
+          -16.319444444444446,
+          -6.944444444444444
+        ],
+        "loo": [
+          -11.956521739130432,
+          -10.507246376811592
+        ]
+      },
+      "status": "PASS"
+    },
+    {
+      "expected": 12,
+      "name": "180-repository table cells",
+      "observed": 12,
+      "status": "PASS"
+    },
+    {
+      "expected": {
+        "Gemma3|PARALLEL|CLEAN": {
+          "bootstrap_ci_pp": [
+            -33.611111111111114,
+            -33.33333333333333
+          ],
+          "effect_pp": -33.425925925925924,
+          "holm_p": 0.00011999880001199988
+        },
+        "Gemma3|PARALLEL|DISRUPT": {
+          "bootstrap_ci_pp": [
+            -33.33333333333333,
+            -33.33333333333333
+          ],
+          "effect_pp": -33.33333333333333,
+          "holm_p": 0.00011999880001199988
+        },
+        "Gemma3|SERIAL|CLEAN": {
+          "bootstrap_ci_pp": [
+            -36.666666666666664,
+            -34.90740740740741
+          ],
+          "effect_pp": -35.74074074074075,
+          "holm_p": 0.00011999880001199988
+        },
+        "Gemma3|SERIAL|DISRUPT": {
+          "bootstrap_ci_pp": [
+            -36.66666666666668,
+            -34.25925925925925
+          ],
+          "effect_pp": -35.46296296296296,
+          "holm_p": 0.00011999880001199988
+        },
+        "InternLM2.5|PARALLEL|CLEAN": {
+          "bootstrap_ci_pp": [
+            -26.203703703703702,
+            -23.055555555555557
+          ],
+          "effect_pp": -24.629629629629626,
+          "holm_p": 0.00011999880001199988
+        },
+        "InternLM2.5|PARALLEL|DISRUPT": {
+          "bootstrap_ci_pp": [
+            -24.72222222222222,
+            -22.129629629629626
+          ],
+          "effect_pp": -23.425925925925924,
+          "holm_p": 0.00011999880001199988
+        },
+        "InternLM2.5|SERIAL|CLEAN": {
+          "bootstrap_ci_pp": [
+            -12.314814814814813,
+            -9.166666666666666
+          ],
+          "effect_pp": -10.74074074074074,
+          "holm_p": 0.00011999880001199988
+        },
+        "InternLM2.5|SERIAL|DISRUPT": {
+          "bootstrap_ci_pp": [
+            -14.166666666666666,
+            -11.018518518518517
+          ],
+          "effect_pp": -12.592592592592592,
+          "holm_p": 0.00011999880001199988
+        },
+        "Qwen3|PARALLEL|CLEAN": {
+          "bootstrap_ci_pp": [
+            0.0,
+            0.0
+          ],
+          "effect_pp": 0.0,
+          "holm_p": 1.0
+        },
+        "Qwen3|PARALLEL|DISRUPT": {
+          "bootstrap_ci_pp": [
+            0.0,
+            0.0
+          ],
+          "effect_pp": 0.0,
+          "holm_p": 1.0
+        },
+        "Qwen3|SERIAL|CLEAN": {
+          "bootstrap_ci_pp": [
+            -7.037037037037036,
+            -4.537037037037036
+          ],
+          "effect_pp": -5.740740740740741,
+          "holm_p": 0.00011999880001199988
+        },
+        "Qwen3|SERIAL|DISRUPT": {
+          "bootstrap_ci_pp": [
+            -6.944444444444444,
+            -4.444444444444445
+          ],
+          "effect_pp": -5.648148148148149,
+          "holm_p": 0.00011999880001199988
+        }
+      },
+      "name": "180-repository submitted effects, intervals, and Holm values",
+      "observed": {
+        "Gemma3|PARALLEL|CLEAN": {
+          "bootstrap_ci_pp": [
+            -33.611111111111114,
+            -33.33333333333333
+          ],
+          "effect_pp": -33.425925925925924,
+          "holm_p": 0.00011999880001199988
+        },
+        "Gemma3|PARALLEL|DISRUPT": {
+          "bootstrap_ci_pp": [
+            -33.33333333333333,
+            -33.33333333333333
+          ],
+          "effect_pp": -33.33333333333333,
+          "holm_p": 0.00011999880001199988
+        },
+        "Gemma3|SERIAL|CLEAN": {
+          "bootstrap_ci_pp": [
+            -36.666666666666664,
+            -34.90740740740741
+          ],
+          "effect_pp": -35.74074074074075,
+          "holm_p": 0.00011999880001199988
+        },
+        "Gemma3|SERIAL|DISRUPT": {
+          "bootstrap_ci_pp": [
+            -36.66666666666668,
+            -34.25925925925925
+          ],
+          "effect_pp": -35.46296296296296,
+          "holm_p": 0.00011999880001199988
+        },
+        "InternLM2.5|PARALLEL|CLEAN": {
+          "bootstrap_ci_pp": [
+            -26.203703703703702,
+            -23.055555555555557
+          ],
+          "effect_pp": -24.629629629629626,
+          "holm_p": 0.00011999880001199988
+        },
+        "InternLM2.5|PARALLEL|DISRUPT": {
+          "bootstrap_ci_pp": [
+            -24.72222222222222,
+            -22.129629629629626
+          ],
+          "effect_pp": -23.425925925925924,
+          "holm_p": 0.00011999880001199988
+        },
+        "InternLM2.5|SERIAL|CLEAN": {
+          "bootstrap_ci_pp": [
+            -12.314814814814813,
+            -9.166666666666666
+          ],
+          "effect_pp": -10.74074074074074,
+          "holm_p": 0.00011999880001199988
+        },
+        "InternLM2.5|SERIAL|DISRUPT": {
+          "bootstrap_ci_pp": [
+            -14.166666666666666,
+            -11.018518518518517
+          ],
+          "effect_pp": -12.592592592592592,
+          "holm_p": 0.00011999880001199988
+        },
+        "Qwen3|PARALLEL|CLEAN": {
+          "bootstrap_ci_pp": [
+            0.0,
+            0.0
+          ],
+          "effect_pp": 0.0,
+          "holm_p": 1.0
+        },
+        "Qwen3|PARALLEL|DISRUPT": {
+          "bootstrap_ci_pp": [
+            0.0,
+            0.0
+          ],
+          "effect_pp": 0.0,
+          "holm_p": 1.0
+        },
+        "Qwen3|SERIAL|CLEAN": {
+          "bootstrap_ci_pp": [
+            -7.037037037037036,
+            -4.537037037037036
+          ],
+          "effect_pp": -5.740740740740741,
+          "holm_p": 0.00011999880001199988
+        },
+        "Qwen3|SERIAL|DISRUPT": {
+          "bootstrap_ci_pp": [
+            -6.944444444444444,
+            -4.444444444444445
+          ],
+          "effect_pp": -5.648148148148149,
+          "holm_p": 0.00011999880001199988
+        }
+      },
+      "status": "PASS"
+    },
+    {
+      "name": "six-pair submitted value and recomputed Monte Carlo estimate",
+      "note": "The saved submitted value and the seeded recomputation are kept separate; Monte Carlo estimates can differ by a draw.",
+      "recomputed_exceedances": 5,
+      "recomputed_holm_p": 0.00047999520004799953,
+      "recomputed_p": 5.999940000599994e-05,
+      "status": "PASS",
+      "submitted_exceedances": 6,
+      "submitted_p": 6.999930000699993e-05
+    }
+  ],
+  "reproduction_limitations": [
+    "The submitted E05 Monte Carlo value is preserved from the saved analysis artifact; a seeded recomputation is reported separately.",
+    "The original required-source 24-task panel preimage is not included; the release retains the paper's reconstructed task representation and released outcomes.",
+    "Task panels and upstream repository text are not redistributed. The portable runner accepts user-supplied task JSON; frozen released outcomes reproduce the paper tables."
+  ],
+  "status": "PASS"
+}

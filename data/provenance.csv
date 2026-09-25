@@ -1,0 +1,4 @@
+file,sha256,scope
+data/results.csv,5943381736d251f9175570dd6996fb7be327063fc09a2fc797d45c86750f6c4b,compact released task-level outcomes
+data/repository_sources.csv,900cea3081281f15442e21473676ecc499db079129bf47bce4aa2d0cefab66d9,verified repository URL and commit metadata for the 180-repository evaluation
+data/paper_expected.json,c097ae0a0881294939ba3389fa96055e3dfd525210d58dede0a7015d64bcbddf,submitted paper-facing numerical values

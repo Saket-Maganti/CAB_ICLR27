@@ -1,0 +1,8 @@
+evaluation,paper_section,release_material,data,reproduction
+Authentic repository evaluation,Authentic repository disruption and preservation,Paired outcome rows,data/results.csv,Offline analysis and released results
+Source-information intervention,Source hints and localization controls,Paired outcome rows by intervention,data/results.csv,Offline analysis and released results
+Model-interface evaluations,Model and interface comparisons,Paired outcome rows by model and interface,data/results.csv,Offline analysis and released results
+Required-source intervention,Direct required-source recovery test,Paired outcome rows by recovery regime,data/results.csv,Offline analysis and released results
+Matched-prompt evaluations,Same-run and six-pair prompt contrasts,Per-task outcomes and prompt-pair IDs,data/results.csv,Offline analysis and released results
+180-repository evaluation,Matched procedural and neutral prompts across 180 repositories,30,240 run outcomes and repository clusters,data/results.csv; data/repository_sources.csv,Offline analysis and released results
+Additional checks,No-tools, file-format, strict-JSON, and repeated-serving checks,Released outcomes and status summaries,data/results.csv; data/additional_checks.csv,Offline analysis and released results

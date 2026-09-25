@@ -1,0 +1,278 @@
+{
+  "source_paper_title": "Intervention Success Is Not Mechanism Identification in Tool-Using Agents",
+  "authentic_repository_evaluation": {
+    "n": 32,
+    "CLEAN": 27,
+    "PRESERVE": 26,
+    "DISRUPT": 14,
+    "clean_minus_disrupt_pp": 40.625,
+    "clean_only": 13,
+    "disrupt_only": 0,
+    "exact_p": 0.000244140625,
+    "bootstrap_ci_pp": [
+      25.0,
+      56.25
+    ],
+    "loo_range_pp": [
+      35.714285714285715,
+      46.42857142857143
+    ]
+  },
+  "source_information_intervention": {
+    "Qwen3": {
+      "CLEAN": {
+        "BASE": 34,
+        "LOCALIZATION_PLACEBO": 35,
+        "CORRECT_SOURCE_ID": 37,
+        "WRONG_SOURCE_ID": 0,
+        "REPLAY": 34
+      },
+      "DISRUPT": {
+        "BASE": 32,
+        "LOCALIZATION_PLACEBO": 33,
+        "CORRECT_SOURCE_ID": 37,
+        "WRONG_SOURCE_ID": 0,
+        "REPLAY": 35
+      }
+    },
+    "Ministral": {
+      "CLEAN": {
+        "BASE": 24,
+        "LOCALIZATION_PLACEBO": 4,
+        "CORRECT_SOURCE_ID": 32,
+        "WRONG_SOURCE_ID": 1,
+        "REPLAY": 34
+      },
+      "DISRUPT": {
+        "BASE": 17,
+        "LOCALIZATION_PLACEBO": 4,
+        "CORRECT_SOURCE_ID": 31,
+        "WRONG_SOURCE_ID": 1,
+        "REPLAY": 34
+      }
+    }
+  },
+  "required_source_intervention": {
+    "Gemma3_PARALLEL_NATURAL_BASE": 13,
+    "Gemma3_PARALLEL_NATURAL_PLACEBO": 4,
+    "Gemma3_PARALLEL_REQUIRED_SOURCE_BASE": 24,
+    "Gemma3_PARALLEL_REQUIRED_SOURCE_PLACEBO": 24,
+    "Gemma3_PARALLEL_SHAM_BASE": 17,
+    "Gemma3_PARALLEL_SHAM_PLACEBO": 5
+  },
+  "matched_prompt_experiments": {
+    "same_run_rows": 1152,
+    "same_run_valid_finals": 1152,
+    "same_run_parser_rejections": 0,
+    "six_pair_rows": 4992,
+    "six_pair_valid_finals": 4992,
+    "six_pair_parser_rejections": 0,
+    "six_pair_action_rejections": 28,
+    "six_pair_qwen_serial_disrupt_neutral": 256,
+    "six_pair_qwen_serial_disrupt_procedural": 223,
+    "six_pair_qwen_serial_disrupt_effect_pp": -11.458333333333334,
+    "six_pair_qwen_serial_disrupt_ci_pp": [
+      -16.319444444444443,
+      -6.944444444444445
+    ],
+    "six_pair_qwen_serial_disrupt_loo_pp": [
+      -11.956521739130434,
+      -10.507246376811594
+    ],
+    "six_pair_reported_mc_p": 6.999930000699993e-05,
+    "same_run_cells": {
+      "Gemma3|SERIAL|CLEAN": [
+        43,
+        48,
+        -10.416666666666666,
+        0.0625,
+        0.4375
+      ],
+      "Gemma3|SERIAL|DISRUPT": [
+        32,
+        29,
+        6.25,
+        0.5810546875,
+        1.0
+      ],
+      "Gemma3|PARALLEL|CLEAN": [
+        48,
+        48,
+        0.0,
+        1.0,
+        1.0
+      ],
+      "Gemma3|PARALLEL|DISRUPT": [
+        32,
+        37,
+        -10.416666666666666,
+        0.1796875,
+        0.8984375
+      ],
+      "Qwen3|SERIAL|CLEAN": [
+        48,
+        48,
+        0.0,
+        1.0,
+        1.0
+      ],
+      "Qwen3|SERIAL|DISRUPT": [
+        36,
+        43,
+        -14.583333333333334,
+        0.015625,
+        0.125
+      ],
+      "Qwen3|PARALLEL|CLEAN": [
+        47,
+        47,
+        0.0,
+        1.0,
+        1.0
+      ],
+      "Qwen3|PARALLEL|DISRUPT": [
+        34,
+        39,
+        -10.416666666666666,
+        0.125,
+        0.75
+      ]
+    },
+    "six_pair_qwen_serial_disrupt_recomputed_mc_p": 5.999940000599994e-05,
+    "six_pair_reported_mc_exceedances": 6
+  },
+  "large_repository_evaluation": {
+    "rows": 30240,
+    "tasks": 360,
+    "repositories": 180,
+    "primary_cells": 12,
+    "gemma_parallel_disrupt_base": 360,
+    "gemma_parallel_disrupt_p_long_correct": 0,
+    "gemma_parallel_disrupt_p_long_n": 360,
+    "failure_json_decode": 2289,
+    "failure_invalid_read": 124,
+    "submitted_cells": {
+      "Gemma3|PARALLEL|CLEAN": {
+        "effect_pp": -33.425925925925924,
+        "bootstrap_ci_pp": [
+          -33.611111111111114,
+          -33.33333333333333
+        ],
+        "holm_p": 0.00011999880001199988
+      },
+      "Gemma3|PARALLEL|DISRUPT": {
+        "effect_pp": -33.33333333333333,
+        "bootstrap_ci_pp": [
+          -33.33333333333333,
+          -33.33333333333333
+        ],
+        "holm_p": 0.00011999880001199988
+      },
+      "Gemma3|SERIAL|CLEAN": {
+        "effect_pp": -35.74074074074075,
+        "bootstrap_ci_pp": [
+          -36.666666666666664,
+          -34.90740740740741
+        ],
+        "holm_p": 0.00011999880001199988
+      },
+      "Gemma3|SERIAL|DISRUPT": {
+        "effect_pp": -35.46296296296296,
+        "bootstrap_ci_pp": [
+          -36.66666666666668,
+          -34.25925925925925
+        ],
+        "holm_p": 0.00011999880001199988
+      },
+      "InternLM2.5|PARALLEL|CLEAN": {
+        "effect_pp": -24.629629629629626,
+        "bootstrap_ci_pp": [
+          -26.203703703703702,
+          -23.055555555555557
+        ],
+        "holm_p": 0.00011999880001199988
+      },
+      "InternLM2.5|PARALLEL|DISRUPT": {
+        "effect_pp": -23.425925925925924,
+        "bootstrap_ci_pp": [
+          -24.72222222222222,
+          -22.129629629629626
+        ],
+        "holm_p": 0.00011999880001199988
+      },
+      "InternLM2.5|SERIAL|CLEAN": {
+        "effect_pp": -10.74074074074074,
+        "bootstrap_ci_pp": [
+          -12.314814814814813,
+          -9.166666666666666
+        ],
+        "holm_p": 0.00011999880001199988
+      },
+      "InternLM2.5|SERIAL|DISRUPT": {
+        "effect_pp": -12.592592592592592,
+        "bootstrap_ci_pp": [
+          -14.166666666666666,
+          -11.018518518518517
+        ],
+        "holm_p": 0.00011999880001199988
+      },
+      "Qwen3|PARALLEL|CLEAN": {
+        "effect_pp": 0.0,
+        "bootstrap_ci_pp": [
+          0.0,
+          0.0
+        ],
+        "holm_p": 1.0
+      },
+      "Qwen3|PARALLEL|DISRUPT": {
+        "effect_pp": 0.0,
+        "bootstrap_ci_pp": [
+          0.0,
+          0.0
+        ],
+        "holm_p": 1.0
+      },
+      "Qwen3|SERIAL|CLEAN": {
+        "effect_pp": -5.740740740740741,
+        "bootstrap_ci_pp": [
+          -7.037037037037036,
+          -4.537037037037036
+        ],
+        "holm_p": 0.00011999880001199988
+      },
+      "Qwen3|SERIAL|DISRUPT": {
+        "effect_pp": -5.648148148148149,
+        "bootstrap_ci_pp": [
+          -6.944444444444444,
+          -4.444444444444445
+        ],
+        "holm_p": 0.00011999880001199988
+      }
+    }
+  },
+  "strict_json_boundary": {
+    "InternLM2.5_SERIAL_CLEAN_BASE": 45,
+    "InternLM2.5_SERIAL_CLEAN_PLACEBO": 0,
+    "InternLM2.5_SERIAL_DISRUPT_BASE": 38,
+    "InternLM2.5_SERIAL_DISRUPT_PLACEBO": 0
+  },
+  "closed_book_no_tools": {
+    "rows": 192,
+    "correct": 3,
+    "tool_calls": 0,
+    "tool_failure_correct": 0,
+    "tool_failure_n": 96,
+    "TOOL_FAILURE_correct": 0,
+    "DECOY_INJECTION_correct": 3,
+    "DECOY_INJECTION_n": 96
+  },
+  "repeated_server_sessions": {
+    "rows": 864,
+    "Qwen3_SERIAL_DISRUPT_N_SHORT": 144,
+    "Qwen3_SERIAL_DISRUPT_P_SHORT": 144,
+    "Gemma3_PARALLEL_CLEAN_N_LONG": 0,
+    "Gemma3_PARALLEL_CLEAN_P_LONG": 5,
+    "Qwen3_PARALLEL_CLEAN_N_MEDIUM": 144,
+    "Qwen3_PARALLEL_CLEAN_P_MEDIUM": 144
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "schema_version": "cab-prompt-coverage-v1",
+  "prompt_manifest": "data/prompt_manifest.json",
+  "scope_note": "Statuses describe exact historical prompt artifacts; they do not indicate whether released outcomes or the portable runner are available.",
+  "evaluations": [
+    {
+      "evaluation": "E01",
+      "status": "EXACT_RELEASED",
+      "records": 288,
+      "scope": "Hash-verified BASE, NEUTRAL, and PROCEDURAL prompts across SERIAL and PARALLEL."
+    },
+    {
+      "evaluation": "E04",
+      "status": "EXACT_RELEASED",
+      "records": 5040,
+      "scope": "Hash-verified BASE and short, medium, and long neutral/procedural prompts across 360 tasks."
+    },
+    {
+      "evaluation": "E05",
+      "status": "EXACT_RELEASED",
+      "records": 1248,
+      "pairs": ["S1", "S2", "M1", "M3", "L1", "L2"],
+      "scope": "Hash-verified BASE prompts and all six matched neutral/procedural pairs."
+    },
+    {
+      "evaluation": "E21",
+      "status": "EXACT_RELEASED",
+      "records": 96,
+      "arms": ["BASE", "PLACEBO"],
+      "experiment_status": "INVALID_FOR_PARALLEL_COMPARISON",
+      "scope": "Hash-verified BASE/PLACEBO prompts for the held-out comparison; PARALLEL results are invalid because of read-action validation errors."
+    },
+    {
+      "evaluation": "required_source_intervention",
+      "status": "EXACT_FRAGMENT_RELEASED",
+      "fragment_id": "S_PLACEBO_LOCALIZATION_STEP",
+      "complete_task_prompts_available": false,
+      "scope": "The verified PLACEBO append fragment is released; full task-specific BASE/PLACEBO prompts are not claimed as exact."
+    },
+    {
+      "evaluation": "source_information_intervention",
+      "status": "PORTABLE_RECONSTRUCTION",
+      "complete_task_prompts_available": false,
+      "scope": "Released outcomes and intervention settings are available; exact historical full rendered prompts are not verified."
+    },
+    {
+      "evaluation": "other_legacy_comparisons",
+      "status": "NOT_AVAILABLE",
+      "complete_task_prompts_available": false,
+      "scope": "Exact historical full prompt renderings were not established for the authentic-repository, historical model-interface, strict-JSON, and file-format comparisons."
+    }
+  ]
+}

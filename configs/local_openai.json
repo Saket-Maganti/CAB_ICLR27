@@ -1,0 +1,31 @@
+{
+  "prompt_manifest": "../data/prompt_manifest.json",
+  "model": {
+    "backend": "openai_compatible",
+    "model_id": "local-model",
+    "endpoint_env": "CAB_ENDPOINT",
+    "api_key_env": "CAB_API_KEY",
+    "settings": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_new_tokens": 512,
+      "seed": 2026,
+      "timeout_seconds": 180
+    }
+  },
+  "run": {
+    "condition": "DISRUPT",
+    "arm": "PROCEDURAL",
+    "interface": "SERIAL",
+    "parser": "e04",
+    "max_steps": 8,
+    "invalid_action": {
+      "mode": "retry",
+      "max_retries": 1
+    },
+    "tool_failure": {
+      "mode": "return_error",
+      "max_retries": 1
+    }
+  }
+}

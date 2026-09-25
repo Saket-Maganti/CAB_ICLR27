@@ -1,0 +1,32 @@
+{
+  "scope": "Offline analysis of released task-level outcomes, plus a portable reference runner for user-supplied task panels.",
+  "primary_methods": {
+    "paired_binary_test": "Two-sided exact McNemar/sign test on discordant paired outcomes.",
+    "holm": "Step-down Holm adjustment within the paper-defined comparison family.",
+    "cluster_bootstrap": "Resample repository clusters with replacement; compute percentile 95% intervals.",
+    "leave_one_repository_out": "Recompute the paired effect after removing each repository cluster."
+  },
+  "seeds": {
+    "authentic_repository_evaluation": 987654321,
+    "model_interface_comparisons": {
+      "Set 1": 20260829,
+      "Set 2": 20260830,
+      "Set 3": 20260830
+    },
+    "same_run_prompt_comparison": 2026090902,
+    "six_pair_prompt_library": {
+      "bootstrap": 2026090906,
+      "sign_flip": 2026090907
+    },
+    "large_repository_matched_prompts": {
+      "base_seed": 2026091200,
+      "cell_order": "sorted by model, interface, condition",
+      "bootstrap_draws": 50000,
+      "sign_flip_draws": 100000,
+      "stream": "one NumPy generator per cell; bootstrap draws precede sign flips"
+    }
+  },
+  "six_pair_note": "For Qwen3/SERIAL/DISRUPT, the saved submitted analysis value is 6.99993e-05 (six exceedances). The seeded release recomputation is reported in a separate column; Monte Carlo estimates are not forced to equal the saved submitted value.",
+  "data_note": "Repository identity is retained as a cluster key. Source text, prompts, final answers, raw outputs, trajectories, timestamps, and request hashes are excluded.",
+  "e04_submitted_procedure": "The 180-repository analysis follows the recovered seed, sorted cell order, repository bootstrap, sign-flip, and Holm family that match the submitted Table 11 values at printed precision."
+}
